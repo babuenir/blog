@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# pid files
+*.pid
+
 # Distribution / packaging
 .Python
 env/
@@ -20,6 +23,7 @@ lib64/
 parts/
 sdist/
 var/
+output/
 *.egg-info/
 .installed.cfg
 *.egg
