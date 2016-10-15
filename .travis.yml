@@ -2,9 +2,10 @@ language: python
 python:
 - '2.7'
 before_install:
+- sudo apt-get update -qq
+- sudo apt-get install openssl --no-install-recommends -y --force-yes
 - openssl aes-256-cbc -K $encrypted_281f99f6d69c_key -iv $encrypted_281f99f6d69c_iv
   -in gh_pages.pub.enc -out ~\/.ssh/github-passkeys/gh_pages.pub -d
-- sudo apt-get update -qq
 install:
 - pip install -r requirements.txt
 script: make publish github
