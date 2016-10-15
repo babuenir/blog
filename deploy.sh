@@ -27,6 +27,7 @@ cd talks
 git checkout talks
 git pull
 cd ..
+git add talks
 git commit -m "Using branch talks for slides from techtalks."
 
 #echo "babuenir.github.io" > CNAME
