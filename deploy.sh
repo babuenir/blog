@@ -22,7 +22,11 @@ git reset upstream/gh-pages
 
 git submodule add https://github.com/babuenir/techtalks.git talks
 git commit -m "Submodule talks."
-git submodule foreach git pull origin talks
+git submodule init
+cd talks
+git checkout talks
+git pull
+cd ..
 git commit -m "Using branch talks for slides from techtalks."
 
 #echo "babuenir.github.io" > CNAME
