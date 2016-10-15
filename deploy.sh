@@ -13,8 +13,8 @@ rev=$(git rev-parse --short HEAD)
 cd output
 
 git init
-git config user.name "BabuSubashChandar"
-git config user.email "babuenir@gmail.com"
+git config --global user.name "BabuSubashChandar"
+git config --global user.email "babuenir@gmail.com"
 
 git remote add upstream "https://$GH_TOKEN@github.com/babuenir/blog.git"
 git fetch upstream
