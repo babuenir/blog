@@ -20,9 +20,15 @@ git remote add upstream "https://$GH_TOKEN@github.com/babuenir/blog.git"
 git fetch upstream
 git reset upstream/gh-pages
 
-git submodule add https://github.com/babuenir/techtalks.git talks
-git commit -m "Submodule talks."
-git submodule init
+# git submodule add https://github.com/babuenir/techtalks.git talks
+# git commit -m "Submodule talks."
+# git submodule init
+# cd talks
+# git checkout talks
+# git pull
+# cd ..
+
+git clone https://github.com/babuenir/techtalks.git talks
 cd talks
 git checkout talks
 git pull
