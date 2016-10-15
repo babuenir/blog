@@ -11,5 +11,5 @@ install:
 script: make publish github
 env:
   global:
-    - ENCRYPTION_LABEL: "281f99f6d69c"
-    - COMMIT_AUTHOR_EMAIL: "babuenir@gmail.com"
+  - ENCRYPTION_LABEL: 281f99f6d69c
+  - COMMIT_AUTHOR_EMAIL: babuenir@gmail.com
