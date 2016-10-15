@@ -20,6 +20,13 @@ git remote add upstream "https://$GH_TOKEN@github.com/babuenir/blog.git"
 git fetch upstream
 git reset upstream/gh-pages
 
+git submodule add https://github.com/babuenir/techtalks.git talks
+git commit -m "Submodule talks."
+git submodule update --init --recursive
+cd talks
+git checkout talks
+git commit -m "Using branch talks for slides from techtalks."
+
 #echo "babuenir.github.io" > CNAME
 
 touch .
