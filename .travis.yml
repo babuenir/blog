@@ -8,7 +8,7 @@ before_install:
   -in gh_pages.pub.enc -out id_rsa.pub -d
 install:
 - pip install -r requirements.txt
-script: make publish github
+script: bash deploy.sh
 env:
   global:
   - ENCRYPTION_LABEL: 281f99f6d69c
