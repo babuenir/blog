@@ -26,6 +26,7 @@ git submodule update --init --recursive
 cd talks
 git checkout talks
 cd ..
+git submodule update --init --recursive
 git commit -m "Using branch talks for slides from techtalks."
 
 #echo "babuenir.github.io" > CNAME
