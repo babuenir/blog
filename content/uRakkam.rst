@@ -43,5 +43,5 @@
 
 ----------
 
-.. |loner| image:: /static/images/dream.jpg
+.. |loner| image:: static/images/dream.jpg
    :width: 500

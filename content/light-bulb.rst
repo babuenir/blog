@@ -14,5 +14,5 @@ A light bulb is worth trying using a pencil. கொழுக்கட்டை �
 
 ------------
 
-.. |bulb| image:: /static/images/light-bulb.jpg
+.. |bulb| image:: static/images/light-bulb.jpg
    :width: 600

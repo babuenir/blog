@@ -47,5 +47,5 @@
 
 -----------------
 
-.. |fatherson| image:: /static/images/father-son.jpg
+.. |fatherson| image:: static/images/father-son.jpg
    :width: 800

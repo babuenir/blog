@@ -47,5 +47,5 @@
 
 -----------------
 
-.. |humanity| image:: /static/images/humanity.jpg
+.. |humanity| image:: static/images/humanity.jpg
    :width: 400

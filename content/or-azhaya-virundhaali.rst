@@ -63,5 +63,5 @@
 
 ----------------------
 
-.. |lunch| image:: /static/images/wedding-lunch.jpg
+.. |lunch| image:: static/images/wedding-lunch.jpg
    :width: 400

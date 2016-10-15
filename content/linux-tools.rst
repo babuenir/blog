@@ -3,7 +3,7 @@
 :date: 2016-09-28
 :category: Technology
 :tags: Linux, Debugging, Tools
-:image: /static/images/linux-format.jpg
+:image: static/images/linux-format.jpg
 :summary: Imagine a situation with no tools available to check a system’s performance, when it comes to an Embedded system engineer...
 
 --------------
@@ -384,6 +384,6 @@ References
 
 --------------
 
-.. |Tux| image:: /static/images/linux-format.jpg
+.. |Tux| image:: static/images/linux-format.jpg
    :width: 600
    :class: responsive-img center-align

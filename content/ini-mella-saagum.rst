@@ -32,5 +32,5 @@
 
 -----------
 
-.. |boygirl| image:: /static/images/boy-and-girl.jpg
+.. |boygirl| image:: static/images/boy-and-girl.jpg
    :width: 400

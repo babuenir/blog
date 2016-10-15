@@ -31,5 +31,5 @@
 
 ------
 
-.. |Bharathi| image:: /static/images/bharathi.jpg
+.. |Bharathi| image:: static/images/bharathi.jpg
    :class: responsive-img center-align

@@ -23,5 +23,5 @@
 
 --------------
 
-.. |nammaazhvar| image:: /static/images/nammaazhvar.jpg
+.. |nammaazhvar| image:: static/images/nammaazhvar.jpg
    :width: 600

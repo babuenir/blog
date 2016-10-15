@@ -13,5 +13,5 @@ Purchased recently a Bamboo Pen tablet for drawing, exploring the various option
 
 ------------
 
-.. |peacock| image:: /static/images/peacock.jpg
+.. |peacock| image:: static/images/peacock.jpg
    :width: 600

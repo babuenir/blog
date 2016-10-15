@@ -59,5 +59,5 @@
 
 ------------------------
 
-.. |clock| image:: /static/images/clock-black-and-white.jpg
+.. |clock| image:: static/images/clock-black-and-white.jpg
    :width: 320

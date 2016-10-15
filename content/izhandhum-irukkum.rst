@@ -40,5 +40,5 @@
 
 -----------------
 
-.. |friends| image:: /static/images/friendship.jpg
+.. |friends| image:: static/images/friendship.jpg
    :width: 500

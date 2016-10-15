@@ -48,5 +48,5 @@
 
 -----------
 
-.. |humiliated| image:: /static/images/humiliated.jpg
+.. |humiliated| image:: static/images/humiliated.jpg
    :width: 400

@@ -13,5 +13,5 @@ My first digital potrait using Bamboo Pen tablet.
 
 ------------
 
-.. |ajith| image:: /static/images/ajith-kumar.jpg
+.. |ajith| image:: static/images/ajith-kumar.jpg
    :width: 600
