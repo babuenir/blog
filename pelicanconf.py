@@ -50,7 +50,7 @@ Literature, Paintings, and so on.
 
 STATIC_PATHS = ['static', ]
 
-THEME = "genus"
+THEME = "theme"
 
 ARTICLE_SAVE_AS = '{slug}.html'
 ARTICLE_URL = '{slug}.html'
