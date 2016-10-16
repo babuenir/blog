@@ -30,6 +30,7 @@ git reset upstream/gh-pages
 
 
 rm -rf talks
+git add .
 git commit -m "Cleaning up talks."
 
 git clone https://github.com/babuenir/techtalks.git talks
