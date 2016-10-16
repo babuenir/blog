@@ -385,5 +385,5 @@ References
 --------------
 
 .. |Tux| image:: static/images/linux-format.jpg
-   :width: 600
+   :width: 500
    :class: responsive-img center-align
