@@ -30,7 +30,6 @@ git checkout talks
 git pull
 cd ..
 git add talks
-git commit -m "Checking out talks branch."
 git submodule init
 git submodule update --init --recursive
 
