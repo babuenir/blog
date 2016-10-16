@@ -45,8 +45,7 @@ ABOUT = """BabuSubashChandar is an Open Source Software enthusiast,
 Embedded Systems Engineer and trainer by profession, an ardent lover of
 arts and science. This is his personal blog, where you can find his
 experiences and works related to GNU/Linux, Embedded Systems,
-Literature, Paintings, and so on. He is currently living in Chennai,
-India.
+Literature, Paintings, and so on.
 """
 
 STATIC_PATHS = ['static', ]
