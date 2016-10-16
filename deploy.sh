@@ -31,7 +31,7 @@ cd talks
 git checkout talks
 cd ..
 rm -rf talks/.git
-cp -rf talks output
+cp -rf talks/talks output
 
 cd output
 
