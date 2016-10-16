@@ -24,14 +24,16 @@ rm -rf talks
 git add -A .
 git commit -m "Cleaning up talks."
 
-git submodule add https://github.com/babuenir/techtalks.git talks
+cd ..
+
+git clone https://github.com/babuenir/techtalks.git talks
 cd talks
 git checkout talks
-git pull
 cd ..
-git add talks
-git submodule init
-git submodule update --init --recursive
+rm -rf talks/.git
+cp -rf talks output
+
+cd output
 
 #echo "babuenir.github.io" > CNAME
 
