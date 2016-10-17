@@ -674,9 +674,8 @@ th {
 .author img {
     display: inline-block
 }
-
-article.listing {
-    float:left;
+.listing {
+    float: left;
     width: 63%;
 }
 aside {
@@ -726,9 +725,20 @@ article.pagination {
 .social {
     text-align: center;
     background: #021c1e;
-    color: #fff;
     padding: 20px;
 }
 .social li {
     padding: 10px
+}
+
+.social i {
+    color: #fff;
+}
+/* For handheld devices */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .listing,
+    aside {
+        float: left;
+        width: 100%;
+    }
 }
