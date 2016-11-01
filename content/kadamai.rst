@@ -5,6 +5,7 @@
 :summary: கடமையைச் செய்ய கடமைப் பட்டு கிடக்கும் அத்துனை நல்ல உள்ளங்களுக்கும்...
 :category: Literature
 :tags:
+:image: static/images/clock-black-and-white.jpg
 
 -------------------------
 

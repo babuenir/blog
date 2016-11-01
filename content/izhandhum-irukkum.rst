@@ -5,6 +5,7 @@
 :summary: நட்பு மட்டுமே உலகில் எதிர்ப்பார்ப்பற்றது...
 :category: Literature
 :tags: நட்பு
+:image: static/images/friendship.jpg
 
 -----------------------------
 

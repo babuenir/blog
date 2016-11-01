@@ -5,6 +5,7 @@
 :summary: எல்லோரையும் எரிச்சலூட்டும் விருந்தாளி இவர்...
 :category: Literature
 :tags: விருந்தாளி
+:image: static/images/wedding-lunch.jpg
 
 ------------------------------
 

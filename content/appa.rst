@@ -5,6 +5,7 @@
 :summary: அப்பாவைப் புரிந்து கொள்ள அப்பாவானால் தான் முடியும்...
 :category: Literature
 :tags: அப்பா
+:image: static/images/father-son.jpg
 
 -------------------------
 

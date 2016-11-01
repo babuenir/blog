@@ -5,6 +5,7 @@
 :category: Art
 :tags: நம்மாழ்வார்
 :summary: மாறுதலுக்கான வாசல் நம்மிடமே உள்ளது...
+:image: static/images/nammaazhvar.jpg
 
 ----------------------
 

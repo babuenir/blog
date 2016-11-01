@@ -4,6 +4,7 @@
 :category: Art
 :tags: Ajith Kumar, Digital potrait
 :summary: A digital potrait using Bamboo Pen tablet...
+:image: static/images/ajith-kumar.jpg
 
 -------------------
 

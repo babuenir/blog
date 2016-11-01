@@ -4,6 +4,7 @@
 :category: Art
 :tags: Bulb, Pencil
 :summary: A light bulb is worth trying using a pencil...
+:image: static/images/light-bulb.jpg
 
 -------------------
 

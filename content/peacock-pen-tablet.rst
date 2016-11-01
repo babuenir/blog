@@ -4,6 +4,7 @@
 :category: Art
 :tags: Bamboo, Peacok
 :summary: A digital drawing first try using Bamboo Pen tablet...
+:image: static/images/peacock.jpg
 
 -------------------
 

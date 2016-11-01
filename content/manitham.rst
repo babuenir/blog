@@ -5,6 +5,7 @@
 :summary: இன்னும் உலகில் மனிதம் செத்து விடவில்லை...
 :category: Literature
 :tags: மனிதம்
+:image: static/images/humanity.jpg
 
 -------------------------
 

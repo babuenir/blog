@@ -5,6 +5,7 @@
 :summary: வீழ்வதை எண்ணியெண்ணி அழுவதை விட வாழும் வழியறிதல் அவசியம்...
 :category: Literature
 :tags: வீழ்ச்சி
+:image: static/images/humiliated.jpg
 
 ------------------------------
 
