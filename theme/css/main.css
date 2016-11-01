@@ -462,7 +462,6 @@ ul {
 
 ol,
 ul {
-    padding-left: 2rem;
     font-family: Titillium Web;
 }
 
@@ -734,6 +733,7 @@ article.pagination {
 .social i {
     color: #fff;
 }
+
 /* For handheld devices */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     .listing,
