@@ -1,0 +1,258 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Pelican based blogging</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Serif+Pro:400,700">
+    <link rel="stylesheet" type="text/css" href="https://babuenir.github.io/blog/theme/css/main.css">
+    <script src="https://use.fontawesome.com/76ac647053.js"></script>
+</head>
+<body itemscope itemtype="http://schema.org/Blog">
+<header class="site-header">
+    <a href="https://babuenir.github.io/blog">
+        <img src="https://babuenir.github.io/blog/static/images/babuenir.png" alt="Babuenir" title="Babuenir">
+    </a>
+    <h1 itemprop="name"><a href="https://babuenir.github.io/blog">BABUENIR</a></h1>
+<p class="subtitle">Random musings on the universe</p>    <br />
+    <div>
+      <a class="button" href="https://babuenir.github.io/blog/category/technology.html">Technology</a>&nbsp;
+      <a class="button" href="https://babuenir.github.io/blog/category/art.html">Art</a>&nbsp;
+      <a class="button" href="https://babuenir.github.io/blog/category/literature.html">Literature</a>
+    </div>
+</header>
+    <main>
+    <section class="main-content">
+<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+        <h1 itemprop="headline" id="pelican-based-blogging">Pelican based blogging</h1>
+        <p>
+            <meta itemprop="datePublished" content="2016-11-02T00:00:00+05:30">
+            <meta itemprop="dateModified" content="2016-11-02T00:00:00+05:30">
+            <meta itemprop="image" content="https://secure.gravatar.com/avatar/aaf9dadf96ba3361de25e04a6c9fdfc3">
+            Posted on 02 November 2016 in <a href="https://babuenir.github.io/blog/category/technology.html">Technology</a>
+        </p>
+    </header>
+    <section id="content" itemprop="mainEntityOfPage">
+        <hr class="docutils" />
+<p><img alt="Pelican" src="static/images/pelican.png" style="width: 300px;" /></p>
+<p>Consider this as my opinion on blogging, someone might find it harsh
+when their blogging mechanisms are ridiculed. It is always a
+painstaking process for me to write something on the blogger or
+wordpress. I was maintaining, &quot;was&quot; (put that in a double double
+quotes) a literature blog, my poetic scribblings. Out of the blue,
+that blog was orphaned. Then there was this technology blog hosted on
+wordpress. I had posted a single article, again this was not fed
+properly by me. Because of a lot of formatting, looking for a nice theme
+along and lot more. It was just given away and I lost all my interest
+to write at all. Even the teensy-tiny bit of writer in me died so
+long. Then this saviour, a static site generator, Pelican came for the
+rescue.</p>
+<p>People were speaking high about static site creators, there are
+numerous such frameworks. Pelican is one among them, a framework
+written in Python. I got instant cling on to this and tried it out.</p>
+<p>Okay! Lets get into business.</p>
+<hr class="docutils" />
+<div class="section" id="what-this-is-about">
+<h2>What this is about?</h2>
+<p>This article speaks about how can one write their thoughts out just in
+a text document, forgetting all those formatting, rolling all the way
+down the hill to fit that in a template and so on. Albeit there is an
+overhead in choosing a theme for this framework, if you are not
+concerned about the looks much, you could use one of the available
+themes in Github. Oh, FYI, Pelican as well as its themes along with
+the goodies are all available in Github.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="how-it-is-done">
+<h2>How it is done?</h2>
+<p>This wonderful Python based framework, Pelican is available as a pip
+package. For the uninitiated, pip is a commandline tool to install
+python based software packages. The following steps would kickstart a
+pelican blog. The steps are for a Linux desktop.</p>
+<hr class="docutils" />
+<div class="section" id="installation">
+<h3>Installation</h3>
+<pre class="code bash literal-block">
+~<span class="nv">$ </span>pip install --user pelican
+</pre>
+<p>The code snippet will install pelican for the current user.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="kickstart">
+<h3>Kickstart</h3>
+<pre class="code bash literal-block">
+~<span class="nv">$ </span>pelican-quickstart
+
+Welcome to pelican-quickstart v3.6.3.
+
+This script will <span class="nb">help </span>you create a new Pelican-based website.
+
+Please answer the following questions so this script can generate the files
+needed by Pelican.
+
+
+&gt; Where <span class="k">do </span>you want to create your new web site? <span class="o">[</span>.<span class="o">]</span>
+&gt; What will be the title of this web site? <span class="nb">test</span>
+&gt; Who will be the author of this web site? <span class="nb">test</span>
+&gt; What will be the default language of this web site? <span class="o">[</span>en<span class="o">]</span>
+&gt; Do you want to specify a URL prefix? e.g., http://example.com   <span class="o">(</span>Y/n<span class="o">)</span>
+&gt; What is your URL prefix? <span class="o">(</span>see above example; no trailing slash<span class="o">)</span> http://example.com
+&gt; Do you want to <span class="nb">enable </span>article pagination? <span class="o">(</span>Y/n<span class="o">)</span>
+&gt; How many articles per page <span class="k">do </span>you want? <span class="o">[</span>10<span class="o">]</span>
+&gt; What is your <span class="nb">time </span>zone? <span class="o">[</span>Europe/Paris<span class="o">]</span>
+&gt; Do you want to generate a Fabfile/Makefile to automate generation and publishing? <span class="o">(</span>Y/n<span class="o">)</span>
+&gt; Do you want an auto-reload &amp; simpleHTTP script to assist with theme and site development? <span class="o">(</span>Y/n<span class="o">)</span> Y
+&gt; Do you want to upload your website using FTP? <span class="o">(</span>y/N<span class="o">)</span> n
+&gt; Do you want to upload your website using SSH? <span class="o">(</span>y/N<span class="o">)</span> n
+&gt; Do you want to upload your website using Dropbox? <span class="o">(</span>y/N<span class="o">)</span> n
+&gt; Do you want to upload your website using S3? <span class="o">(</span>y/N<span class="o">)</span> n
+&gt; Do you want to upload your website using Rackspace Cloud Files? <span class="o">(</span>y/N<span class="o">)</span> n
+&gt; Do you want to upload your website using GitHub Pages? <span class="o">(</span>y/N<span class="o">)</span> y
+&gt; Is this your personal page <span class="o">(</span>username.github.io<span class="o">)</span>? <span class="o">(</span>y/N<span class="o">)</span> y
+Done. Your new project is available at /tmp/test
+</pre>
+<p>With this a static site can be generated in a local machine. The folder structure will be as follows.</p>
+<pre class="code bash literal-block">
+~<span class="nv">$ </span>tree .
+.
+├── content
+├── develop_server.sh
+├── fabfile.py
+├── Makefile
+├── output
+├── pelicanconf.py
+└── publishconf.py
+
+2 directories, 5 files
+</pre>
+<p>In the above list, the following are the meanings.</p>
+<table border="1" class="no-border docutils">
+<colgroup>
+<col width="24%" />
+<col width="76%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>content</td>
+<td>holds all the articles.</td>
+</tr>
+<tr><td>develop_server.sh</td>
+<td>a shell script to run a http server locally.</td>
+</tr>
+<tr><td>fabfile.py</td>
+<td>deploys the same in a server.</td>
+</tr>
+<tr><td>Makefile</td>
+<td>compiles the text files to html files.</td>
+</tr>
+<tr><td>output</td>
+<td>holds all the css and html files for the static site.</td>
+</tr>
+<tr><td>pelicanconf.py</td>
+<td>configuration for Pelican.</td>
+</tr>
+<tr><td>publishconf.py</td>
+<td>configuration to publish the site.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<div class="section" id="start-blogging">
+<h3>Start blogging</h3>
+<p>Add content to the above 'content' directory in any of the
+friendly format (<a class="reference external" href="https://daringfireball.net/projects/markdown/basics">Markdown</a> or
+<a class="reference external" href="http://docutils.sourceforge.net/docs/user/rst/quickref.html">ReStructured Text format</a>). After
+this, host the output directory's content to your domain or using
+github. Refer how to host a blog using Travis article <a class="reference external" href="https://babuenir.github.io/blog/hosting-blog-using-travis.html">here</a>.</p>
+<p><strong>Happy Blogging!</strong></p>
+</div>
+</div>
+<div class="section" id="references">
+<h2>References</h2>
+<ul class="simple">
+<li><a class="reference external" href="http://docs.getpelican.com/en/stable/">Pelican documentation</a></li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="credits">
+<h2>Credits</h2>
+<ul class="simple">
+<li>The Pelican image is from
+<a class="reference external" href="https://pixabay.com/en/pelican-bird-flying-wings-fauna-30878/">Pixabay.</a>. Actually
+the project lacks a logo.</li>
+</ul>
+<hr class="docutils" />
+</div>
+
+    </section>
+    <footer>
+        <div class="tags">
+                <a href="https://babuenir.github.io/blog/tag/pelican.html">Pelican</a>
+                <a href="https://babuenir.github.io/blog/tag/blogging.html">Blogging</a>
+                <a href="https://babuenir.github.io/blog/tag/how-to.html">how-to</a>
+        </div>
+<div class="vcard author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <a href="https://babuenir.github.io/blog/author/babusubashchandar.html">
+        <img class="photo circle" itemprop="image" content="https://secure.gravatar.com/avatar/aaf9dadf96ba3361de25e04a6c9fdfc3" src="https://secure.gravatar.com/avatar/aaf9dadf96ba3361de25e04a6c9fdfc3"/>
+        <strong class="fn name" itemprop="name">BabuSubashChandar</strong>
+    </a>
+</div>    </footer>
+    <div class="comments">
+      <h4>Comments</h4>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "pelican-based-blogging.html";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'https://babuenir.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+</article>
+    </section>
+    </main>
+
+<footer class="about">
+  <div class="main-content">
+    <h4>About</h4>
+    <div class="about-img">
+      <img class="photo circle" itemprop="image" content="https://secure.gravatar.com/avatar/aaf9dadf96ba3361de25e04a6c9fdfc3" src="https://secure.gravatar.com/avatar/aaf9dadf96ba3361de25e04a6c9fdfc3"/>
+      <br>
+    </div>
+    <div class="about-info">
+      <p>BabuSubashChandar is an Open Source Software enthusiast,
+Embedded Systems Engineer and trainer by profession, an ardent lover of
+arts and science. This is his personal blog, where you can find his
+experiences and works related to GNU/Linux, Embedded Systems,
+Literature, Paintings, and so on.
+</p>
+      <p><a class="button" href="https://babuenir.github.io/blog/profile.html" target="_blank">View Profile</a></p>
+    </div>
+  </div>
+  <div class="social">
+    <h5>Social</h5>
+    <ul class="categories">
+      <li><a href="https://github.com/babuenir"><i class="fa fa-github-square fa-3x"></i></a></li>
+      <li><a href="https://twitter.com/babuenir"><i class="fa fa-twitter-square fa-3x"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/babuenir"><i class="fa fa-linkedin-square fa-3x"></i></a></li>
+    </ul>
+  </div>
+</footer><script type="text/javascript">
+    var disqus_shortname = 'babuenir';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'https://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<footer class="site-footer">
+  <p>&copy; BabuSubashChandar </p>
+  <p>Powered by <a href="https://getpelican.com/">Pelican.</a></p>
+</footer></body>
+</html>

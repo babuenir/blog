@@ -103,7 +103,8 @@ section {
 
 ol,
 ul {
-    list-style: none
+    list-style: none;
+    list-style-position: inside;
 }
 
 blockquote,
@@ -686,11 +687,21 @@ footer {
     clear: both;
 }
 
+pre {
+    overflow-x: scroll;
+}
+strong {
+    font-weight: bold;
+}
+
+.code,
+.literal-block,
 .line-block {
     background-color: #e0e0e0;
     color: #424242;
     padding: 20px;
     border-radius: 6px;
+    margin-bottom: 20px;
 }
 
 ul.categories,
@@ -714,6 +725,11 @@ article.pagination {
     cursor: default;
     color: #aaa;
     border: 1px solid #aaa;
+}
+
+.no-border th,
+.no-border td{
+    border: none;
 }
 
 .about {
