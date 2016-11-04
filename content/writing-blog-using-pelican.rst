@@ -133,7 +133,7 @@ friendly format (`Markdown
 `ReStructured Text format
 <http://docutils.sourceforge.net/docs/user/rst/quickref.html>`__). After
 this, host the output directory's content to your domain or using
-github. Refer how to host a blog using Travis article `here <https://babuenir.github.io/blog/hosting-blog-using-travis.html>`__.
+github. Refer how to host a blog using Travis article `here <https://babuenir.github.io/blog/hosting-blog-using-github-and-travis.html>`__.
 
 **Happy Blogging!**
 
