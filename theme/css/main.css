@@ -141,7 +141,7 @@ a {
 img {
     max-width: 100%;
     display: block;
-    margin: 0 auto
+    margin: 10px auto
 }
 
 blockquote {
@@ -365,7 +365,7 @@ hr {
 
 .main-content,
 .site-footer {
-    padding: 2em 1em
+    padding: 1em .5em
 }
 
 .site-footer {
@@ -378,7 +378,7 @@ hr {
     }
     .main-content,
     .site-footer {
-        padding: 2rem 4rem
+        padding: 1rem 2rem
     }
 }
 
@@ -389,7 +389,7 @@ hr {
     .main-content,
     .site-footer {
         max-width: 54rem;
-        padding: 2rem 6rem;
+        padding: 1rem 3rem;
         margin: 0 auto
     }
 }
@@ -562,6 +562,25 @@ h6 a {
     color: rgba(0, 0, 0, .55)
 }
 
+.site-footer img {
+    position: relative;
+    top: 10px;
+}
+
+.post p.shareicons {
+    float: right;
+}
+
+.post header > p,
+.site-footer p,
+.site-footer img {
+    display: inline;
+}
+
+#content img {
+    margin-bottom: 40px;
+}
+
 .author a {
     color: #000
 }
@@ -701,6 +720,7 @@ strong {
     color: #424242;
     padding: 20px;
     border-radius: 6px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -756,5 +776,8 @@ article.pagination {
     aside {
         float: left;
         width: 100%;
+    }
+    .post p.shareicons {
+        float: left;
     }
 }
