@@ -2,9 +2,9 @@
 :author: BabuSubashChandar
 :date: 2016-11-02
 :category: Technology
-:tags: Pelican, Blogging, how-to
+:tags: Pelican, Blogging, How-to
 :image: static/images/pelican.png
-:summary: It is always a painstaking process to fall into visious cycle of blogging through wordpress, blogger or other blogging framework...
+:summary: It is always a painstaking process to fall into vicious cycle of blogging through wordpress, blogger or other blogging framework...
 
 --------------
 
@@ -20,7 +20,7 @@ wordpress. I had posted a single article, again this was not fed
 properly by me. Because of a lot of formatting, looking for a nice theme
 along and lot more. It was just given away and I lost all my interest
 to write at all. Even the teensy-tiny bit of writer in me died so
-long. Then this saviour, a static site generator, Pelican came for the
+long. Then this saviour, a static site generator, Pelican came to the
 rescue.
 
 People were speaking high about static site creators, there are
@@ -29,20 +29,16 @@ written in Python. I got instant cling on to this and tried it out.
 
 Okay! Lets get into business.
 
-----------------
-
 What this is about?
 -------------------
 
-This article speaks about how can one write their thoughts out just in
+This article speaks about how one can write their thoughts out just in
 a text document, forgetting all those formatting, rolling all the way
 down the hill to fit that in a template and so on. Albeit there is an
 overhead in choosing a theme for this framework, if you are not
 concerned about the looks much, you could use one of the available
 themes in Github. Oh, FYI, Pelican as well as its themes along with
 the goodies are all available in Github.
-
-----------------
 
 How it is done?
 ---------------
@@ -52,8 +48,6 @@ package. For the uninitiated, pip is a commandline tool to install
 python based software packages. The following steps would kickstart a
 pelican blog. The steps are for a Linux desktop.
 
------------------
-
 Installation
 ~~~~~~~~~~~~
 
@@ -62,8 +56,6 @@ Installation
   ~$ pip install --user pelican
 
 The code snippet will install pelican for the current user.
-
------------------
 
 Kickstart
 ~~~~~~~~~
@@ -132,8 +124,6 @@ In the above list, the following are the meanings.
    publishconf.py      configuration to publish the site.
    =================   =====================================================
 
------------------
-
 Start blogging
 ~~~~~~~~~~~~~~
 
@@ -151,8 +141,6 @@ References
 ----------
 
 - `Pelican documentation <http://docs.getpelican.com/en/stable/>`__
-
------------------
 
 Credits
 -------

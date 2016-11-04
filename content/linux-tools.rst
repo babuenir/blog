@@ -21,8 +21,6 @@ think about how system analysis had been done. This post is to throw
 some light over the tools that are available for us to poke the system
 at right places and see how it behaves.
 
---------------
-
 Tools Category
 --------------
 
@@ -88,8 +86,6 @@ There are several categories and number of tools under each category.
 |                            |   linux-serial-test   |
 +----------------------------+-----------------------+
 
-----------
-
 Debugging
 ~~~~~~~~~
 
@@ -126,11 +122,8 @@ be traced using the following tools.
 |             | allocations and frees to a file.     |
 +-------------+--------------------------------------+
 
--------------
-
 Profiling
 ~~~~~~~~~
-
 
 +--------------------------------------+-----------------------------------------+
 | Tool                                 | Description                             |
@@ -158,8 +151,6 @@ Profiling
 | **memprof**                          | tool for profiling memory usage and     |
 |                                      | finding memory leaks.                   |
 +--------------------------------------+-----------------------------------------+
-
--------------------
 
 Tracing
 ~~~~~~~
@@ -190,8 +181,6 @@ Tracing
 |                                      | systems in real time.                  |
 +--------------------------------------+----------------------------------------+
 
-------------------
-
 Analyzing
 ~~~~~~~~~
 
@@ -209,8 +198,6 @@ Resource Analyzing
 |                                      | Fortran programs that use the POSIX  |
 |                                      | pthreads threading primitives.       |
 +--------------------------------------+--------------------------------------+
-
------------------
 
 Process Analyzing
 ^^^^^^^^^^^^^^^^^
@@ -230,8 +217,6 @@ Process Analyzing
 |                                      | arguments or all processes.          |
 +--------------------------------------+--------------------------------------+
 
-----------------
-
 Coverage
 ~~~~~~~~
 
@@ -244,8 +229,6 @@ Coverage
 |                                      | running code and to discover untested|
 |                                      | parts of the program.                |
 +--------------------------------------+--------------------------------------+
-
-----------------
 
 Benchmarking
 ~~~~~~~~~~~~
@@ -268,8 +251,6 @@ Benchmarking
 +--------------------------------------+--------------------------------------+
 | **fio**                              | Flash benchmarking.                  |
 +--------------------------------------+--------------------------------------+
-
-------------------
 
 Additional tools
 ~~~~~~~~~~~~~~~~
@@ -303,8 +284,6 @@ Additional tools
 |                                      | performance and usage activities.    |
 +--------------------------------------+--------------------------------------+
 
-----------------
-
 Usage and Risks
 ---------------
 
@@ -321,15 +300,11 @@ Usage and Risks
 -  The best approach would be to use these tools from the development
    phase itself.
 
---------------
-
 Proposed methodologies
 ----------------------
 
 -  To use QEMU, and Eclipse based build and testing platform during
    developement phase itself.
-
---------------
 
 Known Issues
 ------------
@@ -339,8 +314,6 @@ Known Issues
 -  oprofile-server in target and oprofile-viewer(eclipse) in host are
    needed for viewing the report in graphical format.
 
---------------
-
 Solution
 --------
 
@@ -349,8 +322,6 @@ Solution
    because eclipse searches for this path.
 -  oprofile-server is cross-compiled for target and oprofile-viewer is
    compiled and install in host.
-
---------------
 
 References
 ----------
@@ -386,4 +357,3 @@ References
 
 .. |Tux| image:: static/images/linux-format.jpg
    :width: 500
-   :class: responsive-img center-align
