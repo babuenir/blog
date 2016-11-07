@@ -11,6 +11,7 @@ GRAVATAR_IMAGE = 'https://secure.gravatar.com/avatar/aaf9dadf96ba3361de25e04a6c9
 SITELOGO = SITEURL + u'/static/images/babuenir.png'
 
 DISQUS_SITENAME = u'babuenir'
+GOOGLE_ANALYTICS = u"UA-85783055-1"
 
 PATH = 'content'
 
