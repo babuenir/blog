@@ -135,6 +135,17 @@ friendly format (`Markdown
 this, host the output directory's content to your domain or using
 github. Refer how to host a blog using Travis article `here <https://babuenir.github.io/blog/hosting-blog-using-github-and-travis.html>`__.
 
+If you want to have a preview of your blog after adding content, it is
+possible to run a local server from the site's top level directory
+using the following commandline,
+
+.. code:: bash
+
+  ~$ make devserver
+
+Then open http://localhost:8000 from your favourite browser to view
+the blog locally.
+
 **Happy Blogging!**
 
 References
