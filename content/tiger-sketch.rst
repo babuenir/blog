@@ -8,9 +8,9 @@
 
 -------------------
 
-This is a color pencil sketch of a Tiger. Inspired from `Sudhir
-Shivaram photography
-<https://www.facebook.com/SudhirShivaramPhotography/photos/a.113424802079083.26904.112255368862693/1193171790771040/?type=3&theater>.`__
+This is a color pencil sketch of a Tiger.
+
+Inspired from `Sudhir Shivaram photography <https://www.facebook.com/SudhirShivaramPhotography/photos/a.113424802079083.26904.112255368862693/1193171790771040/?type=3&theater>`__
 
 |tiger|
 
