@@ -35,7 +35,7 @@ cp -rf talks/talks output
 
 cd output
 
-#echo "babuenir.github.io" > CNAME
+echo "babuenir.xyz" > CNAME
 
 touch .
 
