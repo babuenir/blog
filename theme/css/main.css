@@ -516,7 +516,8 @@ pre {
 }
 
 #content {
-    font-family: Titillium Web
+    font-family: Titillium Web;
+    user-select: none;
 }
 
 #content h1,
@@ -727,6 +728,7 @@ strong {
     border-radius: 6px;
     margin-top: 20px;
     margin-bottom: 20px;
+    user-select: none;
 }
 
 
