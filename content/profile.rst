@@ -3,6 +3,7 @@
 :date: 2010-06-06
 :category: Literature
 :tags: Introduction
+:status: hidden
 :summary: An introduction to one of the speckles from the star dust of this vast universe.
 
 -------------------
