@@ -6,7 +6,7 @@ AUTHOR = u'BabuSubashChandar'
 SITENAME = u'BabuSubashChandar'
 SITETITLE = u'Babuenir'
 SITESUBTITLE = u'Random musings on the universe'
-SITEURL = u'https://babuenir.github.io'
+SITEURL = u'https://babuenir.github.io/blog'
 GRAVATAR_IMAGE = 'https://secure.gravatar.com/avatar/aaf9dadf96ba3361de25e04a6c9fdfc3'
 SITELOGO = SITEURL + u'/static/images/babuenir.png'
 
