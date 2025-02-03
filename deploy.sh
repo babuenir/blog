@@ -6,11 +6,11 @@ rev=$(git rev-parse --short HEAD)
 
 cd output
 
-git init
+git init -b gh-pages
 git config --global user.name "BabuSubashChandar"
 git config --global user.email "babuenir@gmail.com"
 
-git remote add upstream "git@github.com/babuenir/blog.git"
+git remote add upstream "git@github.com:babuenir/blog.git"
 git fetch upstream
 git reset upstream/gh-pages
 
@@ -29,7 +29,7 @@ cp -rf talks/talks output
 
 cd output
 
-echo "babuenir.github.io" > CNAME
+#echo "babuenir.github.io" > CNAME
 
 touch .
 
