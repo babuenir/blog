@@ -12,6 +12,7 @@
 
 |shadow|
 
+.. _poem:
 .. line-block::
 
   கண்ணாடி இல்லாமல்

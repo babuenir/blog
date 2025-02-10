@@ -13,6 +13,7 @@
 
 |fatherson|
 
+.. _poem:
 .. line-block::
 
   கைகளை பிசைந்து கொண்டு

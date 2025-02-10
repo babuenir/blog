@@ -13,6 +13,7 @@
 
 |friends|
 
+.. _poem:
 .. line-block::
 
   பத்திரமாய் சேகரித்து

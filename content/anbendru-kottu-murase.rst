@@ -11,6 +11,7 @@
 
 |Bharathi|
 
+.. _poem:
 .. line-block::
 
   தேடிச் சோறுநிதந் தின்று
