@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Serif+Pro:400,700">
     <link rel="stylesheet" type="text/css" href="https://babuenir.github.io/blog/theme/css/main.css">
     <link rel="shortcut icon" type="image/x-icon" href="https://babuenir.github.io/blog/static/images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Tamil:ital@1&display=swap" rel="stylesheet">
     <script src="https://use.fontawesome.com/76ac647053.js"></script>
-    <script>$('#content').bind('copy paste cut drag drop', function (e) {
-    e.preventDefault();
-    });
-    </script>
 </head>
 <body itemscope itemtype="http://schema.org/Blog">
 <header class="site-header">
@@ -82,12 +82,11 @@ how things are happening.</p>
 is the url to access Travis. In the user repository, a file
 '.travis.yml' needs to be added. So that a build will be triggered
 every time a commit is done on the repository. The sample file is below.</p>
-<pre class="code literal-block">
-language: python
-python:
-  - '2.7'
-script: echo &quot;Hello World!&quot;
-</pre>
+<div class="highlight"><pre><span></span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python</span>
+<span class="nt">python</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;2.7&#39;</span>
+<span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo &quot;Hello World!&quot;</span>
+</pre></div>
 <p>Travis provides a stable version of Ubuntu machine instance, in which
 the project dependenices are installed and built, the way it is
 mentioned in the '.travis.yml' file.</p>
@@ -100,9 +99,8 @@ Repository&quot; button in the home page will create it. Proceed to fill up
 the different information like repository name, license, readme text
 and so on. After this clone the repository to the local machine using
 git commands.</p>
-<pre class="code bash literal-block">
-~$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/&lt;username&gt;/&lt;project-name&gt;.git
-</pre>
+<div class="highlight"><pre><span></span>~$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/&lt;username&gt;/&lt;project-name&gt;.git
+</pre></div>
 <p>After this, the user has to make some settings. These are kind of a
 deal between Travis and Github. All of the user's content will fall
 into the 'master' branch in their Github repository. The user has to
@@ -110,10 +108,9 @@ create an empty branch named 'gh-pages' in the repository. The user
 has to install Travis. This can be done using &quot;gem&quot;, since it is a
 ruby package. For a Linux based system, the following commands will
 install ruby and travis along,</p>
-<pre class="code bash literal-block">
-~$<span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>ruby-full<span class="w">
-</span>~$<span class="w"> </span>sudo<span class="w"> </span>gem<span class="w"> </span>install<span class="w"> </span>travis
-</pre>
+<div class="highlight"><pre><span></span>~$<span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>ruby-full
+~$<span class="w"> </span>sudo<span class="w"> </span>gem<span class="w"> </span>install<span class="w"> </span>travis
+</pre></div>
 <p>After this is done, the user can go ahead to Github settings and
 create an access token, from the url
 <a class="reference external" href="https://github.com/settings/tokens/new">https://github.com/settings/tokens/new</a>. The name for the token
@@ -126,52 +123,50 @@ saved, no armagedon ahead; it can be regenerated. But it has to be updated
 in every application/deployment, in which the token has been used. Now
 the token has to be passed to the Travis cli to encrypt it and add it
 to the '.travis.yml' automagically.</p>
-<pre class="code bash literal-block">
-~$<span class="w"> </span>travis<span class="w"> </span>login<span class="w">
-</span>Shell<span class="w"> </span>completion<span class="w"> </span>not<span class="w"> </span>installed.<span class="w"> </span>Would<span class="w"> </span>you<span class="w"> </span>like<span class="w"> </span>to<span class="w"> </span>install<span class="w"> </span>it<span class="w"> </span>now?<span class="w"> </span><span class="p">|</span>y<span class="p">|</span><span class="w"> </span>y<span class="w">
-</span>We<span class="w"> </span>need<span class="w"> </span>your<span class="w"> </span>GitHub<span class="w"> </span>login<span class="w"> </span>to<span class="w"> </span>identify<span class="w"> </span>you.<span class="w">
-</span>This<span class="w"> </span>information<span class="w"> </span>will<span class="w"> </span>not<span class="w"> </span>be<span class="w"> </span>sent<span class="w"> </span>to<span class="w"> </span>Travis<span class="w"> </span>CI,<span class="w"> </span>only<span class="w"> </span>to<span class="w"> </span>api.github.com.<span class="w">
-</span>The<span class="w"> </span>password<span class="w"> </span>will<span class="w"> </span>not<span class="w"> </span>be<span class="w"> </span>displayed.<span class="w">
+<div class="highlight"><pre><span></span>~$<span class="w"> </span>travis<span class="w"> </span>login
+Shell<span class="w"> </span>completion<span class="w"> </span>not<span class="w"> </span>installed.<span class="w"> </span>Would<span class="w"> </span>you<span class="w"> </span>like<span class="w"> </span>to<span class="w"> </span>install<span class="w"> </span>it<span class="w"> </span>now?<span class="w"> </span><span class="p">|</span>y<span class="p">|</span><span class="w"> </span>y
+We<span class="w"> </span>need<span class="w"> </span>your<span class="w"> </span>GitHub<span class="w"> </span>login<span class="w"> </span>to<span class="w"> </span>identify<span class="w"> </span>you.
+This<span class="w"> </span>information<span class="w"> </span>will<span class="w"> </span>not<span class="w"> </span>be<span class="w"> </span>sent<span class="w"> </span>to<span class="w"> </span>Travis<span class="w"> </span>CI,<span class="w"> </span>only<span class="w"> </span>to<span class="w"> </span>api.github.com.
+The<span class="w"> </span>password<span class="w"> </span>will<span class="w"> </span>not<span class="w"> </span>be<span class="w"> </span>displayed.
 
-</span>Try<span class="w"> </span>running<span class="w"> </span>with<span class="w"> </span>--github-token<span class="w"> </span>or<span class="w"> </span>--auto<span class="w"> </span><span class="k">if</span><span class="w"> </span>you<span class="w"> </span>don<span class="err">'</span>t<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>enter<span class="w"> </span>your<span class="w"> </span>password<span class="w"> </span>anyway.<span class="w">
+Try<span class="w"> </span>running<span class="w"> </span>with<span class="w"> </span>--github-token<span class="w"> </span>or<span class="w"> </span>--auto<span class="w"> </span><span class="k">if</span><span class="w"> </span>you<span class="w"> </span>don<span class="err">&#39;</span>t<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>enter<span class="w"> </span>your<span class="w"> </span>password<span class="w"> </span>anyway.
 
-</span>Username:<span class="w"> </span>&lt;username&gt;<span class="w">
-</span>Password<span class="w"> </span><span class="k">for</span><span class="w"> </span>&lt;username&gt;:<span class="w"> </span>************<span class="w">
-</span>Successfully<span class="w"> </span>logged<span class="w"> </span><span class="k">in</span><span class="w"> </span>as<span class="w"> </span>&lt;username&gt;<span class="w">
-</span>~$<span class="w">
-</span>~$<span class="w">
-</span>~$<span class="w"> </span>travis<span class="w"> </span>encrypt<span class="w"> </span><span class="nv">GITHUB_TOKEN</span><span class="o">=</span>b892442cfd48a31b41eb0f09c72224a1a0edd880<span class="w">
-</span>Detected<span class="w"> </span>repository<span class="w"> </span>as<span class="w"> </span>&lt;username&gt;/&lt;project&gt;,<span class="w"> </span>is<span class="w"> </span>this<span class="w"> </span>correct?<span class="w"> </span><span class="p">|</span>yes<span class="p">|</span><span class="w">
-</span>Please<span class="w"> </span>add<span class="w"> </span>the<span class="w"> </span>following<span class="w"> </span>to<span class="w"> </span>your<span class="w"> </span>.travis.yml<span class="w"> </span>file:<span class="w">
+Username:<span class="w"> </span>&lt;username&gt;
+Password<span class="w"> </span><span class="k">for</span><span class="w"> </span>&lt;username&gt;:<span class="w"> </span>************
+Successfully<span class="w"> </span>logged<span class="w"> </span><span class="k">in</span><span class="w"> </span>as<span class="w"> </span>&lt;username&gt;
+~$
+~$
+~$<span class="w"> </span>travis<span class="w"> </span>encrypt<span class="w"> </span><span class="nv">GITHUB_TOKEN</span><span class="o">=</span>b892442cfd48a31b41eb0f09c72224a1a0edd880
+Detected<span class="w"> </span>repository<span class="w"> </span>as<span class="w"> </span>&lt;username&gt;/&lt;project&gt;,<span class="w"> </span>is<span class="w"> </span>this<span class="w"> </span>correct?<span class="w"> </span><span class="p">|</span>yes<span class="p">|</span>
+Please<span class="w"> </span>add<span class="w"> </span>the<span class="w"> </span>following<span class="w"> </span>to<span class="w"> </span>your<span class="w"> </span>.travis.yml<span class="w"> </span>file:
 
-  </span>secure:<span class="w"> </span><span class="s2">&quot;pAHsoCLYYsZwMQJyNAae2riKF+K5QSty3cEYja/ESXddW8/yjS1xRXzVlcLPZlisqy1nBe9ZM/jggTbLdNYgtxg3v0hBj88TWD/CMt3WlgfUdEF5qOgs61GAB6vDgXFT/JA2azkoaVdKRPExRw9qGhnkzIJcZAzmMOD46cr37Zuw8ZHcCvVPBxxDkqS1YAePe5xK7i1x5XaC49WyOcEblnQN+eWBn7YjcT4IXNA2kZCJ85rZ/AYmWo8aICp8G/gP3QtzDFs1heORJiFM02q6hX+MVbDVcl1F9NXyoCVU6TiJSj6Qg8yM56XOqQZG6HOgJtJBhZXy8YG5hIE4wCoGx+WTdgqjd2JlhEaiUYF/b1ooKcMwtkkPOMNnQiKtrD5b5XRmqmqg5qAouavjN2BY+lZQdY7Hpn/JCJm3rL1gNhDTsNgaIc59H0sxlMfyLfOZeFsHhiaxoR8Ts4N+pzVqiQChjTO9CLulGm7qDPzJkAEjPPS/SsVqVTllbaY/HFfyEaFIt+jA5UQobxxj4IT3l2G/PF8oZwEbXIpEaJHr8sT7ux7MqlOLlsLrItMjAzNMm4P9Z4kNN4N12aDjellAdbAPZAhqnugZ0aLmHQklj141a4BnSHHuCSocFUHuN/ZDVkHiFXUvTdmzeSOUnhMnvVl4ho+3eSYOsznPiuSqc54=&quot;</span><span class="w">
+<span class="w">  </span>secure:<span class="w"> </span><span class="s2">&quot;pAHsoCLYYsZwMQJyNAae2riKF+K5QSty3cEYja/ESXddW8/yjS1xRXzVlcLPZlisqy1nBe9ZM/jggTbLdNYgtxg3v0hBj88TWD/CMt3WlgfUdEF5qOgs61GAB6vDgXFT/JA2azkoaVdKRPExRw9qGhnkzIJcZAzmMOD46cr37Zuw8ZHcCvVPBxxDkqS1YAePe5xK7i1x5XaC49WyOcEblnQN+eWBn7YjcT4IXNA2kZCJ85rZ/AYmWo8aICp8G/gP3QtzDFs1heORJiFM02q6hX+MVbDVcl1F9NXyoCVU6TiJSj6Qg8yM56XOqQZG6HOgJtJBhZXy8YG5hIE4wCoGx+WTdgqjd2JlhEaiUYF/b1ooKcMwtkkPOMNnQiKtrD5b5XRmqmqg5qAouavjN2BY+lZQdY7Hpn/JCJm3rL1gNhDTsNgaIc59H0sxlMfyLfOZeFsHhiaxoR8Ts4N+pzVqiQChjTO9CLulGm7qDPzJkAEjPPS/SsVqVTllbaY/HFfyEaFIt+jA5UQobxxj4IT3l2G/PF8oZwEbXIpEaJHr8sT7ux7MqlOLlsLrItMjAzNMm4P9Z4kNN4N12aDjellAdbAPZAhqnugZ0aLmHQklj141a4BnSHHuCSocFUHuN/ZDVkHiFXUvTdmzeSOUnhMnvVl4ho+3eSYOsznPiuSqc54=&quot;</span>
 
-</span>Pro<span class="w"> </span>Tip:<span class="w"> </span>You<span class="w"> </span>can<span class="w"> </span>add<span class="w"> </span>it<span class="w"> </span>automatically<span class="w"> </span>by<span class="w"> </span>running<span class="w"> </span>with<span class="w"> </span>--add.<span class="w">
-</span>~$<span class="w">
-</span>~$<span class="w">
-</span>~$<span class="w"> </span>travis<span class="w"> </span>encrypt<span class="w"> </span><span class="nv">GITHUB_TOKEN</span><span class="o">=</span>b892442cfd48a31b41eb0f09c72224a1a0edd880<span class="w"> </span>--add<span class="w">
-</span>~$
-</pre>
+Pro<span class="w"> </span>Tip:<span class="w"> </span>You<span class="w"> </span>can<span class="w"> </span>add<span class="w"> </span>it<span class="w"> </span>automatically<span class="w"> </span>by<span class="w"> </span>running<span class="w"> </span>with<span class="w"> </span>--add.
+~$
+~$
+~$<span class="w"> </span>travis<span class="w"> </span>encrypt<span class="w"> </span><span class="nv">GITHUB_TOKEN</span><span class="o">=</span>b892442cfd48a31b41eb0f09c72224a1a0edd880<span class="w"> </span>--add
+~$
+</pre></div>
 <p>That's it. An example '.travis.yml' is as follows, it has the secure
 environment variable that enables travis to automatically push output
 from building the Pelican blog to 'gh-pages' branch.</p>
-<pre class="code literal-block">
-language: python
-python:
-- '2.7'
-before_install:
-- sudo apt-get update -qq
-install:
-- pip install -r requirements.txt
-script:
-- make clean
-- make html
-env:
-  global:
-  - secure: pAHsoCLYYsZwMQJyNAae2riKF+K5QSty3cEYja/ESXddW8/yjS1xRXzVlcLPZlisqy1nBe9ZM/jggTbLdNYgtxg3v0hBj88TWD/CMt3WlgfUdEF5qOgs61GAB6vDgXFT/JA2azkoaVdKRPExRw9qGhnkzIJcZAzmMOD46cr37Zuw8ZHcCvVPBxxDkqS1YAePe5xK7i1x5XaC49WyOcEblnQN+eWBn7YjcT4IXNA2kZCJ85rZ/AYmWo8aICp8G/gP3QtzDFs1heORJiFM02q6hX+MVbDVcl1F9NXyoCVU6TiJSj6Qg8yM56XOqQZG6HOgJtJBhZXy8YG5hIE4wCoGx+WTdgqjd2JlhEaiUYF/b1ooKcMwtkkPOMNnQiKtrD5b5XRmqmqg5qAouavjN2BY+lZQdY7Hpn/JCJm3rL1gNhDTsNgaIc59H0sxlMfyLfOZeFsHhiaxoR8Ts4N+pzVqiQChjTO9CLulGm7qDPzJkAEjPPS/SsVqVTllbaY/HFfyEaFIt+jA5UQobxxj4IT3l2G/PF8oZwEbXIpEaJHr8sT7ux7MqlOLlsLrItMjAzNMm4P9Z4kNN4N12aDjellAdbAPZAhqnugZ0aLmHQklj141a4BnSHHuCSocFUHuN/ZDVkHiFXUvTdmzeSOUnhMnvVl4ho+3eSYOsznPiuSqc54=
-after_success:
-- bash deploy.sh
-</pre>
+<div class="highlight"><pre><span></span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python</span>
+<span class="nt">python</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;2.7&#39;</span>
+<span class="nt">before_install</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sudo apt-get update -qq</span>
+<span class="nt">install</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install -r requirements.txt</span>
+<span class="nt">script</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">make clean</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">make html</span>
+<span class="nt">env</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">global</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">secure</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pAHsoCLYYsZwMQJyNAae2riKF+K5QSty3cEYja/ESXddW8/yjS1xRXzVlcLPZlisqy1nBe9ZM/jggTbLdNYgtxg3v0hBj88TWD/CMt3WlgfUdEF5qOgs61GAB6vDgXFT/JA2azkoaVdKRPExRw9qGhnkzIJcZAzmMOD46cr37Zuw8ZHcCvVPBxxDkqS1YAePe5xK7i1x5XaC49WyOcEblnQN+eWBn7YjcT4IXNA2kZCJ85rZ/AYmWo8aICp8G/gP3QtzDFs1heORJiFM02q6hX+MVbDVcl1F9NXyoCVU6TiJSj6Qg8yM56XOqQZG6HOgJtJBhZXy8YG5hIE4wCoGx+WTdgqjd2JlhEaiUYF/b1ooKcMwtkkPOMNnQiKtrD5b5XRmqmqg5qAouavjN2BY+lZQdY7Hpn/JCJm3rL1gNhDTsNgaIc59H0sxlMfyLfOZeFsHhiaxoR8Ts4N+pzVqiQChjTO9CLulGm7qDPzJkAEjPPS/SsVqVTllbaY/HFfyEaFIt+jA5UQobxxj4IT3l2G/PF8oZwEbXIpEaJHr8sT7ux7MqlOLlsLrItMjAzNMm4P9Z4kNN4N12aDjellAdbAPZAhqnugZ0aLmHQklj141a4BnSHHuCSocFUHuN/ZDVkHiFXUvTdmzeSOUnhMnvVl4ho+3eSYOsznPiuSqc54=</span>
+<span class="nt">after_success</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bash deploy.sh</span>
+</pre></div>
 <p>The above '.travis.yml' file is explained as,</p>
 <table border="1" class="no-border docutils">
 <colgroup>
@@ -205,35 +200,34 @@ after_success:
 <p>Note that there is a line at 'after_success' step. The script is as
 follows used to push the built output from the Travis work area to
 Github.</p>
-<pre class="code bash literal-block">
-<span class="ch">#!/bin/bash
-</span><span class="w">
-</span><span class="nb">set</span><span class="w"> </span>-o<span class="w"> </span>errexit<span class="w"> </span>-o<span class="w"> </span>nounset<span class="w">
+<div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
 
-</span><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$TRAVIS_BRANCH</span><span class="s2">&quot;</span><span class="w"> </span>!<span class="o">=</span><span class="w"> </span><span class="s2">&quot;master&quot;</span><span class="w"> </span><span class="o">]</span><span class="w">
-</span><span class="k">then</span><span class="w">
-  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;This commit was made against the </span><span class="nv">$TRAVIS_BRANCH</span><span class="s2"> and not the master! No deploy!&quot;</span><span class="w">
-  </span><span class="nb">exit</span><span class="w"> </span><span class="m">0</span><span class="w">
-</span><span class="k">fi</span><span class="w">
+<span class="nb">set</span><span class="w"> </span>-o<span class="w"> </span>errexit<span class="w"> </span>-o<span class="w"> </span>nounset
 
-</span><span class="nv">rev</span><span class="o">=</span><span class="k">$(</span>git<span class="w"> </span>rev-parse<span class="w"> </span>--short<span class="w"> </span>HEAD<span class="k">)</span><span class="w">
+<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$TRAVIS_BRANCH</span><span class="s2">&quot;</span><span class="w"> </span>!<span class="o">=</span><span class="w"> </span><span class="s2">&quot;master&quot;</span><span class="w"> </span><span class="o">]</span>
+<span class="k">then</span>
+<span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;This commit was made against the </span><span class="nv">$TRAVIS_BRANCH</span><span class="s2"> and not the master! No deploy!&quot;</span>
+<span class="w">  </span><span class="nb">exit</span><span class="w"> </span><span class="m">0</span>
+<span class="k">fi</span>
 
-</span><span class="nb">cd</span><span class="w"> </span>output<span class="w">
+<span class="nv">rev</span><span class="o">=</span><span class="k">$(</span>git<span class="w"> </span>rev-parse<span class="w"> </span>--short<span class="w"> </span>HEAD<span class="k">)</span>
 
-</span>git<span class="w"> </span>init<span class="w">
-</span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;&lt;username&gt;&quot;</span><span class="w">
-</span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;&lt;username&#64;example.com&gt;&quot;</span><span class="w">
+<span class="nb">cd</span><span class="w"> </span>output
 
-</span>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>upstream<span class="w"> </span><span class="s2">&quot;https://</span><span class="nv">$GH_TOKEN</span><span class="s2">&#64;github.com/&lt;username&gt;/&lt;project-name&gt;.git&quot;</span><span class="w">
-</span>git<span class="w"> </span>fetch<span class="w"> </span>upstream<span class="w">
-</span>git<span class="w"> </span>reset<span class="w"> </span>upstream/gh-pages<span class="w">
+git<span class="w"> </span>init
+git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;&lt;username&gt;&quot;</span>
+git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;&lt;username@example.com&gt;&quot;</span>
 
-</span>touch<span class="w"> </span>.<span class="w">
+git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>upstream<span class="w"> </span><span class="s2">&quot;https://</span><span class="nv">$GH_TOKEN</span><span class="s2">@github.com/&lt;username&gt;/&lt;project-name&gt;.git&quot;</span>
+git<span class="w"> </span>fetch<span class="w"> </span>upstream
+git<span class="w"> </span>reset<span class="w"> </span>upstream/gh-pages
 
-</span>git<span class="w"> </span>add<span class="w"> </span>-A<span class="w"> </span>.<span class="w">
-</span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;rebuild pages at </span><span class="si">${</span><span class="nv">rev</span><span class="si">}</span><span class="s2">&quot;</span><span class="w">
-</span>git<span class="w"> </span>push<span class="w"> </span>-q<span class="w"> </span>upstream<span class="w"> </span>HEAD:gh-pages
-</pre>
+touch<span class="w"> </span>.
+
+git<span class="w"> </span>add<span class="w"> </span>-A<span class="w"> </span>.
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;rebuild pages at </span><span class="si">${</span><span class="nv">rev</span><span class="si">}</span><span class="s2">&quot;</span>
+git<span class="w"> </span>push<span class="w"> </span>-q<span class="w"> </span>upstream<span class="w"> </span>HEAD:gh-pages
+</pre></div>
 <p>Okay! Now the user has to login Travis site and configure the build
 settings over there. In the link,
 <a class="reference external" href="https://travis-ci.org/profile/username">https://travis-ci.org/profile/username</a> select the project to be built,

@@ -729,7 +729,10 @@ strong {
     margin-bottom: 20px;
 }
 
+#poem,
 .line-block {
+    font-family: "Noto Serif Tamil", serif;
+    font-style: italic;
     user-select: none;
 }
 

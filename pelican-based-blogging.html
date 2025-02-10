@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Serif+Pro:400,700">
     <link rel="stylesheet" type="text/css" href="https://babuenir.github.io/blog/theme/css/main.css">
     <link rel="shortcut icon" type="image/x-icon" href="https://babuenir.github.io/blog/static/images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Tamil:ital@1&display=swap" rel="stylesheet">
     <script src="https://use.fontawesome.com/76ac647053.js"></script>
-    <script>$('#content').bind('copy paste cut drag drop', function (e) {
-    e.preventDefault();
-    });
-    </script>
 </head>
 <body itemscope itemtype="http://schema.org/Blog">
 <header class="site-header">
@@ -79,58 +79,55 @@ python based software packages. The following steps would kickstart a
 pelican blog. The steps are for a Linux desktop.</p>
 <div class="section" id="installation">
 <h3>Installation</h3>
-<pre class="code bash literal-block">
-~$<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--user<span class="w"> </span>pelican
-</pre>
+<div class="highlight"><pre><span></span>~$<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--user<span class="w"> </span>pelican
+</pre></div>
 <p>The code snippet will install pelican for the current user.</p>
 </div>
 <div class="section" id="kickstart">
 <h3>Kickstart</h3>
-<pre class="code bash literal-block">
-~$<span class="w"> </span>pelican-quickstart<span class="w">
+<div class="highlight"><pre><span></span>~$<span class="w"> </span>pelican-quickstart
 
-</span>Welcome<span class="w"> </span>to<span class="w"> </span>pelican-quickstart<span class="w"> </span>v3.6.3.<span class="w">
+Welcome<span class="w"> </span>to<span class="w"> </span>pelican-quickstart<span class="w"> </span>v3.6.3.
 
-</span>This<span class="w"> </span>script<span class="w"> </span>will<span class="w"> </span><span class="nb">help</span><span class="w"> </span>you<span class="w"> </span>create<span class="w"> </span>a<span class="w"> </span>new<span class="w"> </span>Pelican-based<span class="w"> </span>website.<span class="w">
+This<span class="w"> </span>script<span class="w"> </span>will<span class="w"> </span><span class="nb">help</span><span class="w"> </span>you<span class="w"> </span>create<span class="w"> </span>a<span class="w"> </span>new<span class="w"> </span>Pelican-based<span class="w"> </span>website.
 
-</span>Please<span class="w"> </span>answer<span class="w"> </span>the<span class="w"> </span>following<span class="w"> </span>questions<span class="w"> </span>so<span class="w"> </span>this<span class="w"> </span>script<span class="w"> </span>can<span class="w"> </span>generate<span class="w"> </span>the<span class="w"> </span>files<span class="w">
-</span>needed<span class="w"> </span>by<span class="w"> </span>Pelican.<span class="w">
+Please<span class="w"> </span>answer<span class="w"> </span>the<span class="w"> </span>following<span class="w"> </span>questions<span class="w"> </span>so<span class="w"> </span>this<span class="w"> </span>script<span class="w"> </span>can<span class="w"> </span>generate<span class="w"> </span>the<span class="w"> </span>files
+needed<span class="w"> </span>by<span class="w"> </span>Pelican.
 
 
-</span>&gt;<span class="w"> </span>Where<span class="w"> </span><span class="k">do</span><span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>create<span class="w"> </span>your<span class="w"> </span>new<span class="w"> </span>web<span class="w"> </span>site?<span class="w"> </span><span class="o">[</span>.<span class="o">]</span><span class="w">
-</span>&gt;<span class="w"> </span>What<span class="w"> </span>will<span class="w"> </span>be<span class="w"> </span>the<span class="w"> </span>title<span class="w"> </span>of<span class="w"> </span>this<span class="w"> </span>web<span class="w"> </span>site?<span class="w"> </span><span class="nb">test</span><span class="w">
-</span>&gt;<span class="w"> </span>Who<span class="w"> </span>will<span class="w"> </span>be<span class="w"> </span>the<span class="w"> </span>author<span class="w"> </span>of<span class="w"> </span>this<span class="w"> </span>web<span class="w"> </span>site?<span class="w"> </span><span class="nb">test</span><span class="w">
-</span>&gt;<span class="w"> </span>What<span class="w"> </span>will<span class="w"> </span>be<span class="w"> </span>the<span class="w"> </span>default<span class="w"> </span>language<span class="w"> </span>of<span class="w"> </span>this<span class="w"> </span>web<span class="w"> </span>site?<span class="w"> </span><span class="o">[</span>en<span class="o">]</span><span class="w">
-</span>&gt;<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>specify<span class="w"> </span>a<span class="w"> </span>URL<span class="w"> </span>prefix?<span class="w"> </span>e.g.,<span class="w"> </span>http://example.com<span class="w">   </span><span class="o">(</span>Y/n<span class="o">)</span><span class="w">
-</span>&gt;<span class="w"> </span>What<span class="w"> </span>is<span class="w"> </span>your<span class="w"> </span>URL<span class="w"> </span>prefix?<span class="w"> </span><span class="o">(</span>see<span class="w"> </span>above<span class="w"> </span>example<span class="p">;</span><span class="w"> </span>no<span class="w"> </span>trailing<span class="w"> </span>slash<span class="o">)</span><span class="w"> </span>http://example.com<span class="w">
-</span>&gt;<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>article<span class="w"> </span>pagination?<span class="w"> </span><span class="o">(</span>Y/n<span class="o">)</span><span class="w">
-</span>&gt;<span class="w"> </span>How<span class="w"> </span>many<span class="w"> </span>articles<span class="w"> </span>per<span class="w"> </span>page<span class="w"> </span><span class="k">do</span><span class="w"> </span>you<span class="w"> </span>want?<span class="w"> </span><span class="o">[</span><span class="m">10</span><span class="o">]</span><span class="w">
-</span>&gt;<span class="w"> </span>What<span class="w"> </span>is<span class="w"> </span>your<span class="w"> </span><span class="nb">time</span><span class="w"> </span>zone?<span class="w"> </span><span class="o">[</span>Europe/Paris<span class="o">]</span><span class="w">
-</span>&gt;<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>generate<span class="w"> </span>a<span class="w"> </span>Fabfile/Makefile<span class="w"> </span>to<span class="w"> </span>automate<span class="w"> </span>generation<span class="w"> </span>and<span class="w"> </span>publishing?<span class="w"> </span><span class="o">(</span>Y/n<span class="o">)</span><span class="w">
-</span>&gt;<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>an<span class="w"> </span>auto-reload<span class="w"> </span><span class="p">&amp;</span><span class="w"> </span>simpleHTTP<span class="w"> </span>script<span class="w"> </span>to<span class="w"> </span>assist<span class="w"> </span>with<span class="w"> </span>theme<span class="w"> </span>and<span class="w"> </span>site<span class="w"> </span>development?<span class="w"> </span><span class="o">(</span>Y/n<span class="o">)</span><span class="w"> </span>Y<span class="w">
-</span>&gt;<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>upload<span class="w"> </span>your<span class="w"> </span>website<span class="w"> </span>using<span class="w"> </span>FTP?<span class="w"> </span><span class="o">(</span>y/N<span class="o">)</span><span class="w"> </span>n<span class="w">
-</span>&gt;<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>upload<span class="w"> </span>your<span class="w"> </span>website<span class="w"> </span>using<span class="w"> </span>SSH?<span class="w"> </span><span class="o">(</span>y/N<span class="o">)</span><span class="w"> </span>n<span class="w">
-</span>&gt;<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>upload<span class="w"> </span>your<span class="w"> </span>website<span class="w"> </span>using<span class="w"> </span>Dropbox?<span class="w"> </span><span class="o">(</span>y/N<span class="o">)</span><span class="w"> </span>n<span class="w">
-</span>&gt;<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>upload<span class="w"> </span>your<span class="w"> </span>website<span class="w"> </span>using<span class="w"> </span>S3?<span class="w"> </span><span class="o">(</span>y/N<span class="o">)</span><span class="w"> </span>n<span class="w">
-</span>&gt;<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>upload<span class="w"> </span>your<span class="w"> </span>website<span class="w"> </span>using<span class="w"> </span>Rackspace<span class="w"> </span>Cloud<span class="w"> </span>Files?<span class="w"> </span><span class="o">(</span>y/N<span class="o">)</span><span class="w"> </span>n<span class="w">
-</span>&gt;<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>upload<span class="w"> </span>your<span class="w"> </span>website<span class="w"> </span>using<span class="w"> </span>GitHub<span class="w"> </span>Pages?<span class="w"> </span><span class="o">(</span>y/N<span class="o">)</span><span class="w"> </span>y<span class="w">
-</span>&gt;<span class="w"> </span>Is<span class="w"> </span>this<span class="w"> </span>your<span class="w"> </span>personal<span class="w"> </span>page<span class="w"> </span><span class="o">(</span>username.github.io<span class="o">)</span>?<span class="w"> </span><span class="o">(</span>y/N<span class="o">)</span><span class="w"> </span>y<span class="w">
-</span>Done.<span class="w"> </span>Your<span class="w"> </span>new<span class="w"> </span>project<span class="w"> </span>is<span class="w"> </span>available<span class="w"> </span>at<span class="w"> </span>/tmp/test
-</pre>
+&gt;<span class="w"> </span>Where<span class="w"> </span><span class="k">do</span><span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>create<span class="w"> </span>your<span class="w"> </span>new<span class="w"> </span>web<span class="w"> </span>site?<span class="w"> </span><span class="o">[</span>.<span class="o">]</span>
+&gt;<span class="w"> </span>What<span class="w"> </span>will<span class="w"> </span>be<span class="w"> </span>the<span class="w"> </span>title<span class="w"> </span>of<span class="w"> </span>this<span class="w"> </span>web<span class="w"> </span>site?<span class="w"> </span><span class="nb">test</span>
+&gt;<span class="w"> </span>Who<span class="w"> </span>will<span class="w"> </span>be<span class="w"> </span>the<span class="w"> </span>author<span class="w"> </span>of<span class="w"> </span>this<span class="w"> </span>web<span class="w"> </span>site?<span class="w"> </span><span class="nb">test</span>
+&gt;<span class="w"> </span>What<span class="w"> </span>will<span class="w"> </span>be<span class="w"> </span>the<span class="w"> </span>default<span class="w"> </span>language<span class="w"> </span>of<span class="w"> </span>this<span class="w"> </span>web<span class="w"> </span>site?<span class="w"> </span><span class="o">[</span>en<span class="o">]</span>
+&gt;<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>specify<span class="w"> </span>a<span class="w"> </span>URL<span class="w"> </span>prefix?<span class="w"> </span>e.g.,<span class="w"> </span>http://example.com<span class="w">   </span><span class="o">(</span>Y/n<span class="o">)</span>
+&gt;<span class="w"> </span>What<span class="w"> </span>is<span class="w"> </span>your<span class="w"> </span>URL<span class="w"> </span>prefix?<span class="w"> </span><span class="o">(</span>see<span class="w"> </span>above<span class="w"> </span>example<span class="p">;</span><span class="w"> </span>no<span class="w"> </span>trailing<span class="w"> </span>slash<span class="o">)</span><span class="w"> </span>http://example.com
+&gt;<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>article<span class="w"> </span>pagination?<span class="w"> </span><span class="o">(</span>Y/n<span class="o">)</span>
+&gt;<span class="w"> </span>How<span class="w"> </span>many<span class="w"> </span>articles<span class="w"> </span>per<span class="w"> </span>page<span class="w"> </span><span class="k">do</span><span class="w"> </span>you<span class="w"> </span>want?<span class="w"> </span><span class="o">[</span><span class="m">10</span><span class="o">]</span>
+&gt;<span class="w"> </span>What<span class="w"> </span>is<span class="w"> </span>your<span class="w"> </span><span class="nb">time</span><span class="w"> </span>zone?<span class="w"> </span><span class="o">[</span>Europe/Paris<span class="o">]</span>
+&gt;<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>generate<span class="w"> </span>a<span class="w"> </span>Fabfile/Makefile<span class="w"> </span>to<span class="w"> </span>automate<span class="w"> </span>generation<span class="w"> </span>and<span class="w"> </span>publishing?<span class="w"> </span><span class="o">(</span>Y/n<span class="o">)</span>
+&gt;<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>an<span class="w"> </span>auto-reload<span class="w"> </span><span class="p">&amp;</span><span class="w"> </span>simpleHTTP<span class="w"> </span>script<span class="w"> </span>to<span class="w"> </span>assist<span class="w"> </span>with<span class="w"> </span>theme<span class="w"> </span>and<span class="w"> </span>site<span class="w"> </span>development?<span class="w"> </span><span class="o">(</span>Y/n<span class="o">)</span><span class="w"> </span>Y
+&gt;<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>upload<span class="w"> </span>your<span class="w"> </span>website<span class="w"> </span>using<span class="w"> </span>FTP?<span class="w"> </span><span class="o">(</span>y/N<span class="o">)</span><span class="w"> </span>n
+&gt;<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>upload<span class="w"> </span>your<span class="w"> </span>website<span class="w"> </span>using<span class="w"> </span>SSH?<span class="w"> </span><span class="o">(</span>y/N<span class="o">)</span><span class="w"> </span>n
+&gt;<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>upload<span class="w"> </span>your<span class="w"> </span>website<span class="w"> </span>using<span class="w"> </span>Dropbox?<span class="w"> </span><span class="o">(</span>y/N<span class="o">)</span><span class="w"> </span>n
+&gt;<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>upload<span class="w"> </span>your<span class="w"> </span>website<span class="w"> </span>using<span class="w"> </span>S3?<span class="w"> </span><span class="o">(</span>y/N<span class="o">)</span><span class="w"> </span>n
+&gt;<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>upload<span class="w"> </span>your<span class="w"> </span>website<span class="w"> </span>using<span class="w"> </span>Rackspace<span class="w"> </span>Cloud<span class="w"> </span>Files?<span class="w"> </span><span class="o">(</span>y/N<span class="o">)</span><span class="w"> </span>n
+&gt;<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>upload<span class="w"> </span>your<span class="w"> </span>website<span class="w"> </span>using<span class="w"> </span>GitHub<span class="w"> </span>Pages?<span class="w"> </span><span class="o">(</span>y/N<span class="o">)</span><span class="w"> </span>y
+&gt;<span class="w"> </span>Is<span class="w"> </span>this<span class="w"> </span>your<span class="w"> </span>personal<span class="w"> </span>page<span class="w"> </span><span class="o">(</span>username.github.io<span class="o">)</span>?<span class="w"> </span><span class="o">(</span>y/N<span class="o">)</span><span class="w"> </span>y
+Done.<span class="w"> </span>Your<span class="w"> </span>new<span class="w"> </span>project<span class="w"> </span>is<span class="w"> </span>available<span class="w"> </span>at<span class="w"> </span>/tmp/test
+</pre></div>
 <p>With this a static site can be generated in a local machine. The folder structure will be as follows.</p>
-<pre class="code bash literal-block">
-~$<span class="w"> </span>tree<span class="w"> </span>.<span class="w">
-</span>.<span class="w">
-</span>├──<span class="w"> </span>content<span class="w">
-</span>├──<span class="w"> </span>develop_server.sh<span class="w">
-</span>├──<span class="w"> </span>fabfile.py<span class="w">
-</span>├──<span class="w"> </span>Makefile<span class="w">
-</span>├──<span class="w"> </span>output<span class="w">
-</span>├──<span class="w"> </span>pelicanconf.py<span class="w">
-</span>└──<span class="w"> </span>publishconf.py<span class="w">
+<div class="highlight"><pre><span></span>~$<span class="w"> </span>tree<span class="w"> </span>.
+.
+├──<span class="w"> </span>content
+├──<span class="w"> </span>develop_server.sh
+├──<span class="w"> </span>fabfile.py
+├──<span class="w"> </span>Makefile
+├──<span class="w"> </span>output
+├──<span class="w"> </span>pelicanconf.py
+└──<span class="w"> </span>publishconf.py
 
-</span><span class="m">2</span><span class="w"> </span>directories,<span class="w"> </span><span class="m">5</span><span class="w"> </span>files
-</pre>
+<span class="m">2</span><span class="w"> </span>directories,<span class="w"> </span><span class="m">5</span><span class="w"> </span>files
+</pre></div>
 <p>In the above list, the following are the meanings.</p>
 <table border="1" class="no-border docutils">
 <colgroup>
@@ -172,9 +169,8 @@ github. Refer how to host a blog using Travis article <a class="reference extern
 <p>If you want to have a preview of your blog after adding content, it is
 possible to run a local server from the site's top level directory
 using the following commandline,</p>
-<pre class="code bash literal-block">
-~$<span class="w"> </span>make<span class="w"> </span>devserver
-</pre>
+<div class="highlight"><pre><span></span>~$<span class="w"> </span>make<span class="w"> </span>devserver
+</pre></div>
 <p>Then open <a class="reference external" href="http://localhost:8000">http://localhost:8000</a> from your favourite browser to view
 the blog locally.</p>
 <p><strong>Happy Blogging!</strong></p>
