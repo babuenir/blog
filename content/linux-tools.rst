@@ -26,65 +26,68 @@ Tools Category
 
 There are several categories and number of tools under each category.
 
-+----------------------------+-----------------------+
-| Categories                 | Tools                 |
-+============================+=======================+
-| **Debugging**              |   GDB                 |
-|                            +-----------------------+
-|                            |   strace              |
-|                            +-----------------------+
-|                            |   pmap                |
-|                            +-----------------------+
-|                            |   pstack              |
-|                            +-----------------------+
-|                            |   mtrace              |
-+----------------------------+-----------------------+
-| **Profiling**              |   OProfile            |
-|                            +-----------------------+
-|                            |   Perf                |
-|                            +-----------------------+
-|                            |   gprof               |
-|                            +-----------------------+
-|                            |   memprof             |
-+----------------------------+-----------------------+
-| **Tracing**                |   ftrace              |
-|                            +-----------------------+
-|                            |   Lttng               |
-|                            +-----------------------+
-|                            |   System map          |
-|                            +-----------------------+
-|                            |   dtrace              |
-+----------------------------+-----------------------+
-| **Analyzing**              |                       |
-+----------------------------+-----------------------+
-| **(i) Resource Analyzing** |   valgrind            |
-+----------------------------+-----------------------+
-| **(ii) Process Analyzing** |   proc tools          |
-|                            +-----------------------+
-|                            |   vmstat              |
-|                            +-----------------------+
-|                            |   procstat            |
-+----------------------------+-----------------------+
-| **Coverage**               |   gcov                |
-+----------------------------+-----------------------+
-| **Benchmarking**           |   LMbench             |
-|                            +-----------------------+
-|                            |   IOzone              |
-|                            +-----------------------+
-|                            |   memtester           |
-|                            +-----------------------+
-|                            |   flashbench          |
-|                            +-----------------------+
-|                            |   fio                 |
-+----------------------------+-----------------------+
-| **Additional tools**       |   stress-app test     |
-|                            +-----------------------+
-|                            |   measuretime         |
-|                            +-----------------------+
-|                            |   grabserial          |
-|                            +-----------------------+
-|                            |   linux-serial-test   |
-+----------------------------+-----------------------+
+.. table::
+   :widths: 30 70
+
+   +----------------------------+-----------------------+
+   | Categories                 | Tools                 |
+   +============================+=======================+
+   | **Debugging**              |   GDB                 |
+   |                            +-----------------------+
+   |                            |   strace              |
+   |                            +-----------------------+
+   |                            |   pmap                |
+   |                            +-----------------------+
+   |                            |   pstack              |
+   |                            +-----------------------+
+   |                            |   mtrace              |
+   +----------------------------+-----------------------+
+   | **Profiling**              |   OProfile            |
+   |                            +-----------------------+
+   |                            |   Perf                |
+   |                            +-----------------------+
+   |                            |   gprof               |
+   |                            +-----------------------+
+   |                            |   memprof             |
+   +----------------------------+-----------------------+
+   | **Tracing**                |   ftrace              |
+   |                            +-----------------------+
+   |                            |   Lttng               |
+   |                            +-----------------------+
+   |                            |   System map          |
+   |                            +-----------------------+
+   |                            |   dtrace              |
+   +----------------------------+-----------------------+
+   | **Analyzing**              |                       |
+   +----------------------------+-----------------------+
+   | **(i) Resource Analyzing** |   valgrind            |
+   +----------------------------+-----------------------+
+   | **(ii) Process Analyzing** |   proc tools          |
+   |                            +-----------------------+
+   |                            |   vmstat              |
+   |                            +-----------------------+
+   |                            |   procstat            |
+   +----------------------------+-----------------------+
+   | **Coverage**               |   gcov                |
+   +----------------------------+-----------------------+
+   | **Benchmarking**           |   LMbench             |
+   |                            +-----------------------+
+   |                            |   IOzone              |
+   |                            +-----------------------+
+   |                            |   memtester           |
+   |                            +-----------------------+
+   |                            |   flashbench          |
+   |                            +-----------------------+
+   |                            |   fio                 |
+   +----------------------------+-----------------------+
+   | **Additional tools**       |   stress-app test     |
+   |                            +-----------------------+
+   |                            |   measuretime         |
+   |                            +-----------------------+
+   |                            |   grabserial          |
+   |                            +-----------------------+
+   |                            |   linux-serial-test   |
+   +----------------------------+-----------------------+
 
 Debugging
 ~~~~~~~~~
@@ -94,92 +97,102 @@ going on while the executing a program that is holding the computer with
 itself. The sequence of system calls, memory it consumes and so on can
 be traced using the following tools.
 
-+-------------+--------------------------------------+
-| Tool        | Description                          |
-+=============+======================================+
-| **GDB**     | the GNU Project debugger, allows you |
-|             | to see what is going on inside an    |
-|             | other program while it executes-or   |
-|             | what another program was doing at    |
-|             | the moment it crashed.               |
-+-------------+--------------------------------------+
-| **strace**  | runs the specified command until it  |
-|             | exits. It intercepts and records the |
-|             | system calls which are called by a   |
-|             | process and the signals which are    |
-|             | received by a process.               |
-+-------------+--------------------------------------+
-| **pmap**    | reports the memory map of the process|
-+-------------+--------------------------------------+
-| **pstack**  | attaches to the active processes     |
-|             | named by the pids on the commandline,|
-|             | and prints out an execution stack    |
-|             | trace, including a hint at what the  |
-|             | function arguments are.              |
-+-------------+--------------------------------------+
-| **mtrace**  | memory debugger included in GNU C    |
-|             | library. The handlers log all memory |
-|             | allocations and frees to a file.     |
-+-------------+--------------------------------------+
+.. table::
+   :widths: 30 70
+
+   +-------------+--------------------------------------+
+   | Tool        | Description                          |
+   +=============+======================================+
+   | **GDB**     | the GNU Project debugger, allows you |
+   |             | to see what is going on inside an    |
+   |             | other program while it executes-or   |
+   |             | what another program was doing at    |
+   |             | the moment it crashed.               |
+   +-------------+--------------------------------------+
+   | **strace**  | runs the specified command until it  |
+   |             | exits. It intercepts and records the |
+   |             | system calls which are called by a   |
+   |             | process and the signals which are    |
+   |             | received by a process.               |
+   +-------------+--------------------------------------+
+   | **pmap**    | reports the memory map of the process|
+   +-------------+--------------------------------------+
+   | **pstack**  | attaches to the active processes     |
+   |             | named by the pids on the commandline,|
+   |             | and prints out an execution stack    |
+   |             | trace, including a hint at what the  |
+   |             | function arguments are.              |
+   +-------------+--------------------------------------+
+   | **mtrace**  | memory debugger included in GNU C    |
+   |             | library. The handlers log all memory |
+   |             | allocations and frees to a file.     |
+   +-------------+--------------------------------------+
 
 Profiling
 ~~~~~~~~~
 
-+--------------------------------------+-----------------------------------------+
-| Tool                                 | Description                             |
-+======================================+=========================================+
-| **oprofile**                         | OProfile is a system-wide profiler      |
-|                                      | for Linux systems, capable of profiling |
-|                                      | all running code at low overhead.       |
-|                                      | OProfile leverages the hardware         |
-|                                      | performance counters of the CPU to      |
-|                                      | enable profiling of a wide variety of   |
-|                                      | interesting statistics, which can also  |
-|                                      | be used for basic time-spent profiling. |
-+--------------------------------------+-----------------------------------------+
-| **perf**                             | It is capable of statistical profiling  |
-|                                      | of entire system (both kernel and user  |
-|                                      | code), single CPU or several threads.   |
-+--------------------------------------+-----------------------------------------+
-| **gprof**                            | a performance analyzing tool in Unix.   |
-|                                      | It uses a hybrid variety of             |
-|                                      | instrumentaion and sampling. It is an   |
-|                                      | extension of the older prof Unix tool.  |
-|                                      | Unlike prof, gprof is capable of limited|
-|                                      | call graph printing.                    |
-+--------------------------------------+-----------------------------------------+
-| **memprof**                          | tool for profiling memory usage and     |
-|                                      | finding memory leaks.                   |
-+--------------------------------------+-----------------------------------------+
+.. table::
+   :widths: 30 70
+
+   +--------------------------------------+-----------------------------------------+
+   | Tool                                 | Description                             |
+   +======================================+=========================================+
+   | **oprofile**                         | OProfile is a system-wide profiler      |
+   |                                      | for Linux systems, capable of profiling |
+   |                                      | all running code at low overhead.       |
+   |                                      | OProfile leverages the hardware         |
+   |                                      | performance counters of the CPU to      |
+   |                                      | enable profiling of a wide variety of   |
+   |                                      | interesting statistics, which can also  |
+   |                                      | be used for basic time-spent profiling. |
+   +--------------------------------------+-----------------------------------------+
+   | **perf**                             | It is capable of statistical profiling  |
+   |                                      | of entire system (both kernel and user  |
+   |                                      | code), single CPU or several threads.   |
+   +--------------------------------------+-----------------------------------------+
+   | **gprof**                            | a performance analyzing tool in Unix.   |
+   |                                      | It uses a hybrid variety of             |
+   |                                      | instrumentaion and sampling. It is an   |
+   |                                      | extension of the older prof Unix tool.  |
+   |                                      | Unlike prof, gprof is capable of limited|
+   |                                      | call graph printing.                    |
+   +--------------------------------------+-----------------------------------------+
+   | **memprof**                          | tool for profiling memory usage and     |
+   |                                      | finding memory leaks.                   |
+   +--------------------------------------+-----------------------------------------+
 
 Tracing
 ~~~~~~~
 
-+--------------------------------------+----------------------------------------+
-| Tool                                 | Description                            |
-+======================================+========================================+
-| **ftrace**                           | A Linux kernel internal tracer. It     |
-|                                      | includes function tracer. ftrace is    |
-|                                      | named after it.                        |
-+--------------------------------------+----------------------------------------+
-| **Lttng**                            | The LTTng project aims at providing    |
-|                                      | highly efficient tracing tools for     |
-|                                      | Linux. Its tracers help tracking down  |
-|                                      | performance issues and debugging       |
-|                                      | problems involving multiple concurrent |
-|                                      | processes and threads. Tracing across  |
-|                                      | multiple systems is also possible.     |
-+--------------------------------------+----------------------------------------+
-| **System tap**                       | Assists the diagnosis of a performance |
-|                                      | or functional problem. Reduces         |
-|                                      | the developers process sequences to    |
-|                                      | collect performance data.              |
-+--------------------------------------+----------------------------------------+
-| **dtrace**                           | A comprehensive dynamic tracing        |
-|                                      | framework for troubleshooting kernel   |
-|                                      | and application problems on production |
-|                                      | systems in real time.                  |
-+--------------------------------------+----------------------------------------+
+
+.. table::
+   :widths: 30 70
+
+   +--------------------------------------+----------------------------------------+
+   | Tool                                 | Description                            |
+   +======================================+========================================+
+   | **ftrace**                           | A Linux kernel internal tracer. It     |
+   |                                      | includes function tracer. ftrace is    |
+   |                                      | named after it.                        |
+   +--------------------------------------+----------------------------------------+
+   | **Lttng**                            | The LTTng project aims at providing    |
+   |                                      | highly efficient tracing tools for     |
+   |                                      | Linux. Its tracers help tracking down  |
+   |                                      | performance issues and debugging       |
+   |                                      | problems involving multiple concurrent |
+   |                                      | processes and threads. Tracing across  |
+   |                                      | multiple systems is also possible.     |
+   +--------------------------------------+----------------------------------------+
+   | **System tap**                       | Assists the diagnosis of a performance |
+   |                                      | or functional problem. Reduces         |
+   |                                      | the developers process sequences to    |
+   |                                      | collect performance data.              |
+   +--------------------------------------+----------------------------------------+
+   | **dtrace**                           | A comprehensive dynamic tracing        |
+   |                                      | framework for troubleshooting kernel   |
+   |                                      | and application problems on production |
+   |                                      | systems in real time.                  |
+   +--------------------------------------+----------------------------------------+
 
 Analyzing
 ~~~~~~~~~
@@ -187,102 +200,117 @@ Analyzing
 Resource Analyzing
 ^^^^^^^^^^^^^^^^^^
 
-+--------------------------------------+--------------------------------------+
-| Tool                                 | Description                          |
-+======================================+======================================+
-| **Valgrind**                         | Instrumentation framework for        |
-|                                      | building dynamic analysis tools.     |
-+--------------------------------------+--------------------------------------+
-| **Helgrind**                         | A Valgrind tool for detecting        |
-|                                      | synchronisation errors in C, C++ and |
-|                                      | Fortran programs that use the POSIX  |
-|                                      | pthreads threading primitives.       |
-+--------------------------------------+--------------------------------------+
+.. table::
+   :widths: 30 70
+
+   +--------------------------------------+--------------------------------------+
+   | Tool                                 | Description                          |
+   +======================================+======================================+
+   | **Valgrind**                         | Instrumentation framework for        |
+   |                                      | building dynamic analysis tools.     |
+   +--------------------------------------+--------------------------------------+
+   | **Helgrind**                         | A Valgrind tool for detecting        |
+   |                                      | synchronisation errors in C, C++ and |
+   |                                      | Fortran programs that use the POSIX  |
+   |                                      | pthreads threading primitives.       |
+   +--------------------------------------+--------------------------------------+
 
 Process Analyzing
 ^^^^^^^^^^^^^^^^^
 
-+--------------------------------------+--------------------------------------+
-| Tool                                 | Description                          |
-+======================================+======================================+
-| **proc tools**                       | The proc tools are utilities that    |
-|                                      | exercise features of /proc           |
-+--------------------------------------+--------------------------------------+
-| **vmstat**                           | Reports information about processes, |
-|                                      | memory, paging, block IO, traps,     |
-|                                      | and cpu activity.                    |
-+--------------------------------------+--------------------------------------+
-| **procstat**                         | Displays detailed information about  |
-|                                      | the processes identified by the pid  |
-|                                      | arguments or all processes.          |
-+--------------------------------------+--------------------------------------+
+.. table::
+   :widths: 30 70
+
+   +--------------------------------------+--------------------------------------+
+   | Tool                                 | Description                          |
+   +======================================+======================================+
+   | **proc tools**                       | The proc tools are utilities that    |
+   |                                      | exercise features of /proc           |
+   +--------------------------------------+--------------------------------------+
+   | **vmstat**                           | Reports information about processes, |
+   |                                      | memory, paging, block IO, traps,     |
+   |                                      | and cpu activity.                    |
+   +--------------------------------------+--------------------------------------+
+   | **procstat**                         | Displays detailed information about  |
+   |                                      | the processes identified by the pid  |
+   |                                      | arguments or all processes.          |
+   +--------------------------------------+--------------------------------------+
 
 Coverage
 ~~~~~~~~
 
-+--------------------------------------+--------------------------------------+
-| Tool                                 | Description                          |
-+======================================+======================================+
-| **gcov**                             | A test coverage program. Use it in   |
-|                                      | concert with GCC to analyze programs |
-|                                      | to help create more efficient, faster|
-|                                      | running code and to discover untested|
-|                                      | parts of the program.                |
-+--------------------------------------+--------------------------------------+
+.. table::
+   :widths: 30 70
+
+   +--------------------------------------+--------------------------------------+
+   | Tool                                 | Description                          |
+   +======================================+======================================+
+   | **gcov**                             | A test coverage program. Use it in   |
+   |                                      | concert with GCC to analyze programs |
+   |                                      | to help create more efficient, faster|
+   |                                      | running code and to discover untested|
+   |                                      | parts of the program.                |
+   +--------------------------------------+--------------------------------------+
 
 Benchmarking
 ~~~~~~~~~~~~
 
-+--------------------------------------+--------------------------------------+
-| Tool                                 | Description                          |
-+======================================+======================================+
-| **LMbench**                          | A benchmarking tool for bandwidth,   |
-|                                      | latency and processor clock rate etc.|
-+--------------------------------------+--------------------------------------+
-| **IOzone**                           | A filesystem benchmark tool. The     |
-|                                      | benchmark generates and measures a   |
-|                                      | variety of file operations. Iozone   |
-|                                      | has been ported to many machines and |
-|                                      | runs under many operating systems.   |
-+--------------------------------------+--------------------------------------+
-| **memtester**                        | DDR testing benchmark.               |
-+--------------------------------------+--------------------------------------+
-| **flashbench**                       | Flash benchmarking.                  |
-+--------------------------------------+--------------------------------------+
-| **fio**                              | Flash benchmarking.                  |
-+--------------------------------------+--------------------------------------+
+.. table::
+   :widths: 30 70
+
+   +--------------------------------------+--------------------------------------+
+   | Tool                                 | Description                          |
+   +======================================+======================================+
+   | **LMbench**                          | A benchmarking tool for bandwidth,   |
+   |                                      | latency and processor clock rate etc.|
+   +--------------------------------------+--------------------------------------+
+   | **IOzone**                           | A filesystem benchmark tool. The     |
+   |                                      | benchmark generates and measures a   |
+   |                                      | variety of file operations. Iozone   |
+   |                                      | has been ported to many machines and |
+   |                                      | runs under many operating systems.   |
+   +--------------------------------------+--------------------------------------+
+   | **memtester**                        | DDR testing benchmark.               |
+   +--------------------------------------+--------------------------------------+
+   | **flashbench**                       | Flash benchmarking.                  |
+   +--------------------------------------+--------------------------------------+
+   | **fio**                              | Flash benchmarking.                  |
+   +--------------------------------------+--------------------------------------+
 
 Additional tools
 ~~~~~~~~~~~~~~~~
 
-+--------------------------------------+--------------------------------------+
-| Tool                                 | Description                          |
-+======================================+======================================+
-| **stress-app test**                  | Stressful Application Test (or       |
-|                                      | stressapptest, its unix name) tries  |
-|                                      | to maximize randomized traffic to    |
-|                                      | memory from processor and I/O, with  |
-|                                      | the intent of creating a realistic   |
-|                                      | high load situation in order to test |
-|                                      | the existing hardware devices in a   |
-|                                      | computer. It has been used at Google |
-|                                      | for some time and now it is available|
-|                                      | under the apache 2.0 license.        |
-+--------------------------------------+--------------------------------------+
-| **measuretime**                      | Timing analysis.                     |
-+--------------------------------------+--------------------------------------+
-| **grabserial**                       | Boottime analysis, grabs the serial  |
-|                                      | console with respect to pattern and  |
-|                                      | time.                                |
-+--------------------------------------+--------------------------------------+
-| **linux-serial-test**                | For serial bandwidth testing.        |
-+--------------------------------------+--------------------------------------+
-| **smem**                             | Gives numerous reports on memory     |
-|                                      | usage in Linux system.               |
-+--------------------------------------+--------------------------------------+
-| **SYSSTAT**                          | Contains utilities to monitor system |
-|                                      | performance and usage activities.    |
-+--------------------------------------+--------------------------------------+
+.. table::
+   :widths: 30 70
+
+   +--------------------------------------+--------------------------------------+
+   | Tool                                 | Description                          |
+   +======================================+======================================+
+   | **stress-app test**                  | Stressful Application Test (or       |
+   |                                      | stressapptest, its unix name) tries  |
+   |                                      | to maximize randomized traffic to    |
+   |                                      | memory from processor and I/O, with  |
+   |                                      | the intent of creating a realistic   |
+   |                                      | high load situation in order to test |
+   |                                      | the existing hardware devices in a   |
+   |                                      | computer. It has been used at Google |
+   |                                      | for some time and now it is available|
+   |                                      | under the apache 2.0 license.        |
+   +--------------------------------------+--------------------------------------+
+   | **measuretime**                      | Timing analysis.                     |
+   +--------------------------------------+--------------------------------------+
+   | **grabserial**                       | Boottime analysis, grabs the serial  |
+   |                                      | console with respect to pattern and  |
+   |                                      | time.                                |
+   +--------------------------------------+--------------------------------------+
+   | **linux-serial-test**                | For serial bandwidth testing.        |
+   +--------------------------------------+--------------------------------------+
+   | **smem**                             | Gives numerous reports on memory     |
+   |                                      | usage in Linux system.               |
+   +--------------------------------------+--------------------------------------+
+   | **SYSSTAT**                          | Contains utilities to monitor system |
+   |                                      | performance and usage activities.    |
+   +--------------------------------------+--------------------------------------+
 
 Usage and Risks
 ---------------

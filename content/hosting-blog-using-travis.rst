@@ -54,12 +54,12 @@ is the url to access Travis. In the user repository, a file
 '.travis.yml' needs to be added. So that a build will be triggered
 every time a commit is done on the repository. The sample file is below.
 
-.. code::
+.. code-block:: yaml
 
-  language: python
-  python:
-    - '2.7'
-  script: echo "Hello World!"
+    language: python
+    python:
+      - '2.7'
+    script: echo "Hello World!"
 
 Travis provides a stable version of Ubuntu machine instance, in which
 the project dependenices are installed and built, the way it is
@@ -75,7 +75,7 @@ the different information like repository name, license, readme text
 and so on. After this clone the repository to the local machine using
 git commands.
 
-.. code:: bash
+.. code-block:: bash
 
   ~$ git clone https://github.com/<username>/<project-name>.git
 
@@ -87,7 +87,7 @@ has to install Travis. This can be done using "gem", since it is a
 ruby package. For a Linux based system, the following commands will
 install ruby and travis along,
 
-.. code:: bash
+.. code-block:: bash
 
   ~$ sudo apt-get install ruby-full
   ~$ sudo gem install travis
@@ -108,7 +108,7 @@ in every application/deployment, in which the token has been used. Now
 the token has to be passed to the Travis cli to encrypt it and add it
 to the '.travis.yml' automagically.
 
-.. code:: bash
+.. code-block:: bash
 
   ~$ travis login
   Shell completion not installed. Would you like to install it now? |y| y
@@ -139,7 +139,7 @@ That's it. An example '.travis.yml' is as follows, it has the secure
 environment variable that enables travis to automatically push output
 from building the Pelican blog to 'gh-pages' branch.
 
-.. code::
+.. code-block:: yaml
 
   language: python
   python:
@@ -177,7 +177,7 @@ Note that there is a line at 'after_success' step. The script is as
 follows used to push the built output from the Travis work area to
 Github.
 
-.. code:: bash
+.. code-block:: bash
 
   #!/bin/bash
 

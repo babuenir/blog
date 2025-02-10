@@ -51,63 +51,63 @@ pelican blog. The steps are for a Linux desktop.
 Installation
 ~~~~~~~~~~~~
 
-.. code:: bash
+.. code-block:: bash
 
-  ~$ pip install --user pelican
+    ~$ pip install --user pelican
 
 The code snippet will install pelican for the current user.
 
 Kickstart
 ~~~~~~~~~
 
-.. code:: bash
+.. code-block:: bash
 
-  ~$ pelican-quickstart
+    ~$ pelican-quickstart
 
-  Welcome to pelican-quickstart v3.6.3.
+    Welcome to pelican-quickstart v3.6.3.
 
-  This script will help you create a new Pelican-based website.
+    This script will help you create a new Pelican-based website.
 
-  Please answer the following questions so this script can generate the files
-  needed by Pelican.
+    Please answer the following questions so this script can generate the files
+    needed by Pelican.
 
 
-  > Where do you want to create your new web site? [.]
-  > What will be the title of this web site? test
-  > Who will be the author of this web site? test
-  > What will be the default language of this web site? [en]
-  > Do you want to specify a URL prefix? e.g., http://example.com   (Y/n)
-  > What is your URL prefix? (see above example; no trailing slash) http://example.com
-  > Do you want to enable article pagination? (Y/n)
-  > How many articles per page do you want? [10]
-  > What is your time zone? [Europe/Paris]
-  > Do you want to generate a Fabfile/Makefile to automate generation and publishing? (Y/n)
-  > Do you want an auto-reload & simpleHTTP script to assist with theme and site development? (Y/n) Y
-  > Do you want to upload your website using FTP? (y/N) n
-  > Do you want to upload your website using SSH? (y/N) n
-  > Do you want to upload your website using Dropbox? (y/N) n
-  > Do you want to upload your website using S3? (y/N) n
-  > Do you want to upload your website using Rackspace Cloud Files? (y/N) n
-  > Do you want to upload your website using GitHub Pages? (y/N) y
-  > Is this your personal page (username.github.io)? (y/N) y
-  Done. Your new project is available at /tmp/test
+    > Where do you want to create your new web site? [.]
+    > What will be the title of this web site? test
+    > Who will be the author of this web site? test
+    > What will be the default language of this web site? [en]
+    > Do you want to specify a URL prefix? e.g., http://example.com   (Y/n)
+    > What is your URL prefix? (see above example; no trailing slash) http://example.com
+    > Do you want to enable article pagination? (Y/n)
+    > How many articles per page do you want? [10]
+    > What is your time zone? [Europe/Paris]
+    > Do you want to generate a Fabfile/Makefile to automate generation and publishing? (Y/n)
+    > Do you want an auto-reload & simpleHTTP script to assist with theme and site development? (Y/n) Y
+    > Do you want to upload your website using FTP? (y/N) n
+    > Do you want to upload your website using SSH? (y/N) n
+    > Do you want to upload your website using Dropbox? (y/N) n
+    > Do you want to upload your website using S3? (y/N) n
+    > Do you want to upload your website using Rackspace Cloud Files? (y/N) n
+    > Do you want to upload your website using GitHub Pages? (y/N) y
+    > Is this your personal page (username.github.io)? (y/N) y
+    Done. Your new project is available at /tmp/test
 
 
 With this a static site can be generated in a local machine. The folder structure will be as follows.
 
-.. code:: bash
+.. code-block:: bash
 
-  ~$ tree .
-  .
-  ├── content
-  ├── develop_server.sh
-  ├── fabfile.py
-  ├── Makefile
-  ├── output
-  ├── pelicanconf.py
-  └── publishconf.py
+    ~$ tree .
+    .
+    ├── content
+    ├── develop_server.sh
+    ├── fabfile.py
+    ├── Makefile
+    ├── output
+    ├── pelicanconf.py
+    └── publishconf.py
 
-  2 directories, 5 files
+    2 directories, 5 files
 
 In the above list, the following are the meanings.
 
@@ -139,9 +139,9 @@ If you want to have a preview of your blog after adding content, it is
 possible to run a local server from the site's top level directory
 using the following commandline,
 
-.. code:: bash
+.. code-block:: bash
 
-  ~$ make devserver
+    ~$ make devserver
 
 Then open http://localhost:8000 from your favourite browser to view
 the blog locally.
